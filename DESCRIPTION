@@ -11,8 +11,17 @@ Description: The nwasc package was written by FWS for BOEM to segment transect
   transect.
 License: GPL-3
 Imports: 
-    tibble (>= 1.4.2),
-    rlang (>= 0.1.2)
+    tibble,
+    rlang (>= 0.1.2),
+    sp,
+    rgeos,
+    lubridate,
+    readr,
+    stringi,
+    tidyr,
+    broom,
+    zoo,
+    maptools
 Suggests: 
     spelling (>= 1.2),
     testthat (>= 2.0.0),

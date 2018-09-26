@@ -1,0 +1,688 @@
+"species_type_cd","spp_cd","common_name","scientific_name","itis_cd"
+"1","ABDH","American Black Duck X Mallard Hybrid","Anas rubripes x platy.",
+"1","ABDU","American Black Duck","Anas rubripes",175068
+"5","ALGA","Algal bloom","--",
+"4","ALTU","Albacore Tuna","Thunnus alalunga",172419
+"1","AMBI","American Bittern","Botaurus lentiginosus",174856
+"1","AMCO","American Coot","Fulica americana",176292
+"1","AMCR","American Crow","Corvus brachyrhynchos",179731
+"1","AMGO","American Goldfinch","Carduelis tristis",179236
+"1","AMGP","American Golden Plover","Pluvialis dominica",176564
+"1","AMKE","American Kestrel","Falco sparverius",175622
+"1","AMOY","American Oystercatcher","Haematopus palliatus",176472
+"1","AMPI","American Pipit","Anthus rubescens",554127
+"1","AMRE","American Redstart","Setophaga ruticilla",178979
+"1","AMRO","American Robin","Turdus migratorius",179759
+"1","AMWI","American Wigeon","Anas americana",175094
+"1","AMWO","American Woodcock","Scolopax minor",176580
+"1","ANHI","Anhinga anhinga","Anhinga anhinga",174755
+"5","ANTE","Antennae","--",
+"1","APLO","Arctic Loon/Pacific Loon","Gavia arctica/pacifica",
+"1","ARLO","Arctic Loon","Gavia arctica",174471
+"1","ARTE","Arctic Tern","Sterna paradisaea",176890
+"2","ASDO","Atlantic Spotted Dolphin","Stenella frontalis",552460
+"1","ATPU","Atlantic Puffin","Fratercula arctica",177025
+"1","ATSP","American Tree Sparrow","Spizella arborea",179432
+"1","AUSH","Audubon's Shearwater","Puffinus iherminieri",174561
+"1","AWPE","American White Pelican","Pelecanus erythrorhynchos ",174684
+"1","BAEA","Bald Eagle","Haliaeetus leucocephalus",175420
+"1","BAGO","Barrow's Goldeneye","Bucephala islandica",175144
+"5","BAIT","bait ball","--",
+"5","BALN","balloon","--",
+"1","BANO","Barn Owl","Tyto alba",177851
+"1","BANS","Bank Swallow","Riparia riparia",178436
+"1","BAOR","Baltimore Oriole","Icterus galbula",179083
+"1","BAOW","Barred Owl","Strix varia",177921
+"1","BARS","Barn Swallow","Hirundo rustica",178448
+"1","BASA","Baird's Sandpiper","Calidris bairdii",176655
+"4","BASH","Basking Shark","Cetorhinus maximus",159907
+"1","BAWW","Black-and-white Warbler","Mniotilta varia",178844
+"1","BBCU","Black-billed Cuckoo","Coccyzus erythropthalmus",177834
+"1","BBPL","Black-bellied Plover","Pluvialis squatarola",176567
+"1","BBSP","Black-bellied Storm-petrel","Fregetta tropica",174655
+"2","BBWH","Blainville's Beaked Whale","	Mesoplodon densirstris",
+"1","BBWO","Black-backed Woodpecker","Picoides arcticus",178250
+"1","BCCH","Black-capped Chickadee","Poecile atricapillus",554382
+"1","BCNH","Black-crowned Night-Heron","Nycticorax nycticorax",174832
+"1","BCPE","Black-capped Petrel","Pterodroma hasitata",174567
+"5","BDDR","Blue Dasher Dragonfly","Pachydiplax longipennis",101799
+"1","BEKI","Belted Kingfisher","Megaceryle alcyon",178106
+"1","BEPE","Bermuda Petrel","Pterodroma cahow",174568
+"2","BESE","Bearded Seal","Erignathus barbatus",180655
+"1","BFAL","Black-footed Albatross","Diomedea nigripes",174516
+"4","BFTU","Atlantic Bluefin Tuna","Thunnus thynnus",172421
+"1","BGGN","Blue-gray Gnatcatcher","Polioptila caerulea",179853
+"1","BHCO","Brown-headed Cowbird","Molothrus ater",179112
+"1","BHGU","Common Black-headed Gull","Larus ridibundus",176835
+"4","BIFI","billfishes","Istiophoridae spp.",172486
+"4","BLAT","Blackfin Tuna","Thunnus atlanticus",172427
+"1","BLBW","Blackburnian Warbler","Dendroica fusca",178904
+"1","BLGU","Black Guillemot","Cepphus grylle",176985
+"1","BLJA","Blue Jay","Cyanocitta cristata",179680
+"1","BLKI","Black-legged Kittiwake","Rissa tridactyla",176875
+"4","BLMA","Blue Marlin","Makaira nigricans",172491
+"1","BLNO","Black Noddy","Anous minutus",176944
+"1","BLOY","Black Oystercatcher","Haematopus bachmani",176475
+"1","BLPW","Blackpoll Warbler","Dendroica striata",178913
+"1","BLSC","Black Scoter","Melanitta nigra",175171
+"4","BLSH","Blue Shark","Prionace glauca",160424
+"1","BLSK","Black Skimmer","Rynchops niger",554447
+"1","BLSP","Black Storm-petrel","Oceanodroma melania",174640
+"5","BLST","Black Swallowtail","Papilio polyxenes ",188545
+"1","BLTE","Black Tern","Chlidonias niger",176959
+"4","BLUE","Bluefish","Pomatomus saltatrix",168559
+"1","BLVU","Black Vulture","Coragyps atratus",175272
+"2","BLWH","Blue Whale","Balaenoptera musculus",180528
+"1","BNST","Black-necked Stilt","Himantopus mexicanus",176726
+"5","BOAC","Boat--aircraft carrier","--",
+"5","BOAT","Boat--unidentified","--",
+"5","BOBA","boat--barge/barge and tug","--",
+"1","BOBO","Bobolink","Dolichonyx oryzivorus",179032
+"5","BOCA","Boat--cargo","--",
+"5","BOCF","Boat--commercial fishing","--",
+"5","BOCG","Boat--Coast Guard","--",
+"1","BOCH","Boreal Chickadee","Poecile hudsonica",554386
+"5","BOCR","Boat--cruise","--",
+"5","BOCS","boat--container ship","--",
+"2","BODO","Bottlenose Dolphin","Tursiops truncatus",180426
+"5","BOFE","Boat--Ferry","--",
+"5","BOFI","Boat--Fishing","--",
+"1","BOGU","Bonaparte's Gull","Larus philadelphia",176839
+"5","BOLO","boat--lobster","--",
+"5","BOME","boat--merchant","--",
+"5","BONA","Boat--navy","--",
+"4","BONI","Bonito","Scombridae spp.",172398
+"5","BOPL","Boat--pleasure","--",
+"5","BOPS","boat--purseiner","--",
+"5","BORF","Boat--recreational fishing","--",
+"5","BORV","boat--research vessel","--",
+"5","BOSA","Boat--sail","--",
+"5","BOSU","Boat--submarine","--",
+"5","BOTA","Boat--tanker","--",
+"5","BOTD","boat--trawler/dragger","--",
+"5","BOTU","boat--tug","--",
+"1","BOWA","Bohemian Waxwing","Bombycilla garrulus",178529
+"5","BOWW","boat--whale watch","--",
+"5","BOYA","boat--yacht","--",
+"1","BRAN","Brant","Branta bernicla",175011
+"1","BRBL","Brewer's Blackbird","Euphagus cyanocephalus",179094
+"1","BRBO","Brown Booby","Sula leucogaster",174704
+"1","BRCR","Brown Creeper","Certhia americana",178803
+"2","BRDO","Bridled Dolphin","Stenella attenuata/ frontalis",
+"1","BRNO","Brown Noddy","Anous stolidus",176941
+"1","BRPE","Brown Pelican","Pelecanus occidentalis",174685
+"1","BRSP","Band-rumped Storm-petrel","Oceanodroma castro",174636
+"1","BRTE","Bridled Tern","Sterna anaethetus",176897
+"1","BRTH","Brown Thrasher","Toxostoma rufum",178627
+"5","BSTB","Black Swallowtail Butterfly","Papilio polyxenes",188543
+"1","BTBW","Black-throated Blue Warbler","Dendroica caerulescens",178888
+"1","BTGR","Boat-tailed Grackle","Quiscalus major",179108
+"1","BTGU","Black-tailed Gull","Larus crassirostris",176831
+"1","BTNW","Black-throated Green Warbler","Dendroica virens",178898
+"1","BUFF","Bufflehead","Bucephala albeola",175145
+"5","BUMB","Unidentified Bee","--",
+"5","BUOY","buoy","--",
+"1","BUPE","Bulwer's Petrel","Bulweria  Bulweria",554144
+"1","BUTE","Unidentified Buteo","Buteo spp.",175349
+"1","BVSH","Black-vented Shearwater","Puffinus opisthomelas",554396
+"1","BWTE","Blue-winged Teal","Anas discors",175086
+"1","BWWA","Blue-winged Warbler","Vermivora pinus",178853
+"1","CAAU","Cassin's Auklet","Ptychoramphus aleuticus",177013
+"1","CACH","Carolina Chickadee","Poecile carolinensis",554383
+"1","CAEG","Cattle Egret","Bubulcus ibis",174803
+"1","CAGU","California Gull","Larus californicus",176829
+"5","CAJE","Cannonball Jelly","Stomolophus meleagris",51926
+"1","CANG","Canada Goose","Branta canadensis",174999
+"1","CANV","Canvasback","Aythya valisineria",175129
+"1","CARW","Carolina Wren","Thryothorus ludovicianus",178581
+"1","CASW","Cave Swallow","Petrochelidon fulva",178460
+"1","CATE","Caspian Tern","Sterna caspia",176924
+"1","CAWA","Canada Warbler","Cardellina canadensis",950079
+"2","CBWH","Cuvier's Beaked Whale","Ziphius cavirostris",180498
+"1","CEDW","Cedar Waxwing","Bombycilla cedrorum",178532
+"5","CHAN","Change in personnel, station, transect, etc.","--",
+"1","CHAR","Unidentified Charadriiform","Charadriiformes spp.",176445
+"1","CHIC","Unidentified Chickadee","--",
+"1","CHSP","Chipping Sparrow","Spizella passerina",179435
+"1","CHSW","Chimney Swift","Chaetura pelagica",178001
+"2","CLDO","Clymene Dolphin","Stenella clymene",180435
+"1","CLRA","Clapper Rail","Rallus longirostris",176209
+"5","CLSU","Cloudless Sulphur","Phoebis sennae",777750
+"1","CLSW","Cliff Swallow","Petrochelidon pyrrhonota",178455
+"1","CMWA","Cape May Warbler","Dendroica tigrina",178887
+"4","CNRA","Cownose Ray","Rhinoptera bonasus ",160985
+"2","CODO","Common Dolphin","Delphinus delphis",180438
+"1","COEI","Common Eider","Somateria mollissima",175155
+"1","COGA","Common Gallinule","Gallinula galeata",708108
+"1","COGO","Common Goldeneye","Bucephala clangula",175141
+"1","COGR","Common Grackle","Quiscalus quiscula",179104
+"1","COHA","Cooper's Hawk","Accipiter cooperii",175309
+"1","COLO","Common Loon","Gavia immer",174469
+"1","COME","Common Merganser","Mergus merganser",175185
+"1","COMO","Common Moorhen","Gallinula chloropus",176284
+"1","COMU","Common Murre (thin-billed murre, common guillemot)","Uria aalge",176974
+"1","CONI","Common Nighthawk","Chordeiles minor",177979
+"1","COPE","Cook's Petrel","Pterodroma cookii",554395
+"1","CORA","Common Raven","Corvus corax",179725
+"1","CORE","Common Redpoll","Carduelis flammea",179230
+"1","COSH","Cory's Shearwater","Calonectris diomedea",203446
+"1","COSN","Common Snipe","Gallinago gallinago",176700
+"1","COTE","Common Tern","Sterna hirundo",176888
+"1","COYE","Common Yellowthroat","Geothlypis trichas",178944
+"1","CVSH","Cape Verde Shearwater","Calonectris edwardsii",723253
+"1","DASC","Unidentified Dark scoter - black or surf","--",
+"1","DCCO","Double-crested Cormorant","Phalacrocorax auritus",174717
+"1","DEJU","Dark-eyed Junco","Junco hyemalis",179410
+"1","DOVE","Dovekie","Alle alle",176982
+"1","DOWI","Unidentified Dowitcher spp.","Limnodromus griseus or L. scolopaceus",176674
+"1","DOWO","Downy Woodpecker","Picoides pubescens",178259
+"2","DPSW","Unidentified Dwarf/Pygmy Sperm Whale","Kogia simus or K. breviceps",180490
+"5","DRAG","dragonfly spp.","--",
+"2","DSWH","Dwarf Sperm Whale","Kogia sima",180492
+"1","DUNL","Dunlin","Calidris alpina",176661
+"1","EABL","Eastern Bluebird","Sialia sialis",179801
+"1","EAKI","Eastern Kingbird","Tyrannus tyrannus",178279
+"1","EAME","Eastern Meadowlark","Sturnella magna",179034
+"1","EAPH","Eastern Phoebe","Sayornis phoebe",178329
+"1","EASO","Eastern Screech-Owl","Megascops asio",686658
+"1","EATO","Eastern Towhee","Pipilo erythrophthalmus",179276
+"1","EISC","Unidentified Eider/Scoter spp.","Melanitta/Somateria spp.",
+"5","ERRO","error","--",
+"1","EUOY","Eurasian Oystercatcher","Haematopus ostralegus",176469
+"1","EUSP","European Storm-petrel","Hydrobates pelagicus",174663
+"1","EUST","European Starling","Sturnus vulgaris",179637
+"1","EUWI","Eurasian Wigeon","Anas penelope",175092
+"1","EVGR","Evening Grosbeak","Coccothraustes vespertinus",179173
+"4","FAAL","False Albacore","Euthynnus alletteratus",172402
+"1","FALC","Unidentified falcon","Falco spp.",175598
+"1","FEPE","Fea's Petrel","Pterodroma feae",562557
+"1","FFSH","Flesh-footed Shearwater","Puffinus carneipes",174548
+"5","FGGI","fixed gear--gill net","--",
+"5","FGLO","fixed gear--lobster","--",
+"5","FGUN","fixed gear--unidentified","--",
+"1","FICR","Fish Crow","Corvus ossifragus",179737
+"5","FIGE","fishing gear","--",
+"4","FISH","Unidentified fish","Osteichthyes",161030
+"1","FISP","Field Sparrow","Spizella pusilla",179443
+"2","FIWH","Fin Whale","Balaenoptera physalus",180527
+"2","FKWH","False Killer Whale","Pseudorca crassidens",180463
+"5","FLJE","flotsam and jetsam","--",
+"1","FOSP","Fox Sparrow","Passerella iliaca",179464
+"1","FOTE","Forster's Tern","Sterna forsteri",176887
+"2","FRDO","Fraser's Dolphin","Lagenodelphis hosei",180440
+"1","FRGU","Franklin's Gull","Larus pipixcan",176838
+"1","FTSP","Fork-tailed Storm-petrel","Oceanodroma furcata",174625
+"5","FUEL","oil/fuel","--",
+"1","GADW","Gadwall","Anas strepera",175073
+"1","GBBG","Great Black-backed Gull","Larus marinus",176815
+"1","GBHE","Great Blue Heron","Ardea herodias",174773
+"1","GBHG","Unidentified Great Black-backed/Herring Gull","Larus marinus/argentatus",
+"1","GBTE","Gull-billed Tern","Sterna nilotica",176926
+"2","GBWH","Gervais' Beaked Whale","Mesoplodon europaeus",
+"1","GCKI","Golden-crowned Kinglet","Regulus satrapa",179865
+"1","GHGH","Glaucous Gull X Herring Gull (hybrid)","Larus hyperboreus X argentatus",
+"1","GHOW","Great Horned Owl","Bubo virginianus",177884
+"5","GISW","Giant Swallowtail Butterfly","Papilio cresphontes",
+"1","GLGU","Glaucous Gull","Larus hyperboreus",176808
+"1","GLIB","Glossy Ibis","Plegadis falcinellus",174924
+"1","GOME","Unidentified Goldeneye or Merganser","--",
+"4","GOMR","Giant Oceanic Manta Ray","Manta birostris",160992
+"1","GRAJ","Gray Jay","Perisoreus canadensis",179667
+"1","GRAK","Gray Kingbird","Tyrannus dominicensis",178280
+"1","GRCA","Gray Catbird","Dumetella carolinensis",178625
+"1","GRCO","Great Cormorant","Phalacrocorax carbo",174715
+"5","GRDA","Green Darner","Anax junius",101598
+"1","GREG","Great Egret","Ardea alba",554135
+"1","GRFR","Great Frigatebird","Fregata minor",174766
+"1","GRHE","Green Heron","Butorides Virescens",174793
+"1","GRSC","Greater Scaup","Aythya marila",175130
+"2","GRSE","Gray Seal","Halichoerus grypus",180653
+"1","GRSH","Greater Shearwater","Puffinus gravis",174549
+"1","GRSK","Great Skua","Stercorarius skua",660059
+"1","GRSP","Grasshopper Sparrow","Ammodramus savannarum",179333
+"3","GRTU","Green Turtle","Chelonia mydas",173833
+"1","GRYE","Greater Yellowlegs","Tringa melanoleuca",176619
+"1","GUTE","Unidentified Small Gull/Tern","--",
+"1","GWFG","Greater White-fronted Goose","Anser albifrons",175020
+"1","GWGU","Glaucous-winged Gull","Larus glaucescens",176814
+"4","GWSH","Great White Shark","Carcharodon carcharias ",159903
+"1","GWTE","Green-winged Teal","Anas crecca",175081
+"1","HADU","Harlequin Duck","Histrionicus histrionicus",175149
+"1","HAPE","Hawaiian Petrel","Pterodroma sandwichensis",562561
+"2","HAPO","Harbor Porpoise","Phocoena phocoena",180473
+"2","HASE","Harbor Seal","Phoca vitulina",180649
+"4","HASH","Hammerhead shark","Sphyrnidae spp.",160497
+"3","HATU","Hawksbill Turtle","Eretmochelys imbricata",173837
+"1","HAWK","Unidentified hawk","--",
+"1","HAWO","Hairy Woodpecker","Picoides villosus",178262
+"1","HEPE","Herald Petrel","Pterodroma arminjoniana",174570
+"1","HERG","Herring Gull","Larus argentatus",176824
+"1","HETH","Hermit Thrush","Catharus guttatus",179779
+"5","HOCR","Atlantic Horseshoe Crab","Limulus polyphemus",82703
+"1","HOFI","House Finch","Carpodacus mexicanus",179191
+"1","HOGR","Horned Grebe","Podiceps auritus",174482
+"1","HOLA","Horned Lark","Eremophila alpestris",554256
+"1","HOME","Hooded Merganser","Lophodytes cucullatus",175183
+"1","HORE","Hoary Redpoll","Carduelis hornemanni",179231
+"2","HOSE","Hooded Seal","Cystophora cristata",180657
+"1","HOSP","House Sparrow","Passer domesticus",179628
+"1","HOWA","Hooded Warbler","Wilsonia citrinis",178972
+"1","HOWR","House Wren","Troglodytes aedon",178541
+"2","HRPS","Harp Seal","Pagophilus groenlandicus",622022
+"1","HUGO","Hudsonian Godwit","Limosa haemastica",176690
+"2","HUWH","Humpback Whale","Megaptera novaeangliae",180530
+"5","ICE","ice","--",
+"1","ICGU","Iceland Gull","Larus glaucoides",176811
+"1","INBU","Indigo Bunting","Passerina cyanea",179150
+"1","IVGU","Ivory Gull","Pagophila eburnea",176851
+"1","JFPE","Juan Fernandez Petrel ssp.","Pterodroma externa externa",174575
+"1","JUNC","Unidentified junco","--",179409
+"1","KIEI","King Eider","Somateria spectabilis",175160
+"1","KILL","Killdeer","Charadrius vociferus",176520
+"4","KIMA","King Mackerel","Scomberomorus cavalla",172435
+"1","KIRA","King Rail","Rallus elegans",176207
+"2","KIWH","Killer Whale","Orcinus orca",180469
+"5","KRILL","Unidentified krill","--",
+"3","KRST","Kemp's Ridley Sea Turtle","Lepidochelys kempii",551770
+"1","KUGU","Kumlien's Gull","Larus glaucoides kumlieni",176813
+"5","LABA","Latex balloon","--",
+"1","LAGU","Laughing Gull","Larus atricilla",176837
+"1","LALO","Lapland Longspur","Calcarius lapponicus",179526
+"1","LBBG","Lesser Black-backed Gull","Larus fuscus",176821
+"1","LBDO","Long-billed Dowitcher","Limnodromus scolopaceus",176679
+"1","LBHE","Little Blue Heron","Egretta caerulea",174827
+"1","LEAS","Least Storm-petrel","Oceanodroma microsoma",174646
+"1","LENO","Lesser Noddy","Anous tenuirostris",176943
+"1","LEOW","Long-eared Owl","Asio otus",177932
+"1","LESA","Least Sandpiper","Calidris minutilla",176656
+"1","LESC","Lesser Scaup","Aythya affinis",175134
+"1","LESP","Leach's Storm-petrel","Oceanodroma leucorhoa",174628
+"1","LETE","Least Tern","Sterna antillarum",176923
+"3","LETU","Leatherback Turtle","Dermochelys coriacea",173843
+"1","LEYE","Lesser Yellowlegs","Tringa flavipes",176620
+"2","LFPW","Long-finned Pilot Whale","Globicephala melas",552461
+"1","LIGU","Little Gull","Larus minutus",176840
+"5","LINE","rope/line","--",
+"1","LISH","Little Shearwater","Puffinus assimilis",174559
+"1","LISP","Lincoln's Sparrow","Melospiza lincolnii",179484
+"1","LITE","Little Tern","Sternula albifrons ",824124
+"1","LONG","Unidentified Longspur","Calcarius spp.",179524
+"1","LOSH","Loggerhead Shrike","Lanius ludovicianus",178515
+"3","LOTU","Loggerhead Turtle","Caretta caretta",173830
+"1","LSGB","Lesser Snow Goose, Blue Phase","Chen caerulescens",175038
+"1","LSGW","Lesser Snow Goose, White phase","Chen caerulescens",175038
+"2","LSSD","Long-snouted Spinner Dolphin","Stenella longirostris",180429
+"1","LTDU","Long-tailed Duck","Clangula hyemalis",175147
+"1","LTJA","Long-tailed Jaeger","Stercorarius longicaudus",176794
+"1","MABO","Masked Booby","Sula dactylatra",174699
+"5","MACR","macroalgae","--",
+"1","MAFR","Magnificent Frigatebird","Fregata magnificens",174763
+"1","MAGO","Marbled Godwit","Limosa fedoa",176686
+"4","MAKO","Unidentified Long-finned/Short-finned Mako Shark","Isurus spp.",159923
+"1","MALL","Mallard","Anas platyrhynchos",175063
+"4","MAMA","Dolphin fish (Mahi-Mahi)","Coryphaena hippurus",168791
+"4","MARA","Unidentified Manta Ray","Mobulidae",160990
+"1","MASH","Manx Shearwater","Puffinus puffinus",174555
+"1","MAWA","Magnolia Warbler","Dendroica magnolia",178886
+"1","MAWR","Marsh Wren","Cistothorus palustris",178608
+"1","MEAD","Unidentified Meadowlark","Sturnella  spp.",179033
+"1","MEGU","Mew Gull","Larus canus",176832
+"1","MERL","Merlin","Falco columbarius",175613
+"2","MHDO","Melon-headed Whale","Peponocephala electra",180459
+"2","MIWH","Minke Whale","Balaenoptera acutorostrata",180524
+"1","MODO","Mourning Dove","Zenaida macroura",177125
+"4","MOLA","Ocean Sunfish (Mola)","Mola mola",173414
+"5","MONA","Monarch Butterfly","Danaus plexippus",117273
+"5","MOON","Moon Jellyfish","Aurelia aurita",51701
+"1","MOPL","Mountain Plover","Charadrius montanus",176522
+"1","MOWA","Mourning Warbler","Oporornis philadelphia",178939
+"1","MUSW","Mute Swan","Cygnus Olor",174985
+"5","MYBA","Mylar balloon","--",
+"1","MYWA","Myrtle Warbler","Dendroica c. coronata",178892
+"2","NABW","North Atlantic Bottle-nosed whale","Hyperoodon ampullatus",180504
+"1","NAWA","Nashville Warbler","Vermivora ruficapilla",178861
+"1","NHOW","Northern Hawk Owl","Surnia ulula",177898
+"1","NOBO","Northern Bobwhite","Colinus virginianus",175863
+"1","NOCA","Northern Cardinal","Cardinalis cardinalis",179124
+"1","NOFL","Northern Flicker","Colaptes auratus",178154
+"1","NOFU","Northern Fulmar","Fulmarus glacialis",174536
+"1","NOGA","Northern Gannet","Morus bassanus",174712
+"1","NOGO","Northern Goshawk","Accipiter gentilis",175300
+"1","NOHA","Northern Harrier","Circus cyaneus",175430
+"1","NOMO","Northern Mockingbird","Mimus polyglottos",178620
+"5","NONE","none","--",
+"1","NOPA","Northern Parula","Parula americana",178868
+"1","NOPI","Northern Pintail","Anas acuta",175074
+"1","NOTE","Unidentified Noddy Tern","--",
+"1","NOWA","Northern Waterthrush","Seiurus noveboracensis",178931
+"1","NRWS","Northern Rough-winged Swallow","Stelgidopteryx serripennis",178443
+"1","NSHO","Northern Shoveler","Anas clypeata",175096
+"1","NSHR","Northern Shrike","Lanius excubitor",178511
+"1","NSTS","Nelson's Sharp-tailed Sparrow","Ammodramus nelsoni",554031
+"1","NSWO","Northern Saw-whet Owl","Aegolius acadicus",177942
+"5","OCFR","ocean front","--",
+"1","OCWA","Orange-crowned Warbler","Vermivora celata",178856
+"1","OROR","Orchard Oriole","Icterus spurius",179064
+"5","ORSU","Orange Sulphur","Colias eurytheme",188528
+"1","OSPR","Osprey","Pandion haliaetus",175590
+"1","OVEN","Ovenbird","Seiurus aurocapillus",178927
+"4","OWTS","Oceanic Whitetip Shark (aka. Brown shark, brown Milbert's sand bar shark, nigano shark, silvertip shark))","Carcharhinus longimanus",160330
+"1","PAJA","Parasitic Jaeger","Stercorarius parasiticus",176793
+"1","PALO","Pacific Loon","Gavia pacifica",174475
+"1","PAWA","Palm Warbler","Dendroica palmarum",178921
+"1","PBGR","Pied-billed Grebe","Podilymbus podiceps",174505
+"1","PECO","Pelagic Cormorant","Phalacrocorax pelagicus",174725
+"1","PEEP","Unidentified peep","--",
+"1","PEFA","Peregrine Falcon","Falco peregrinus",175604
+"1","PELI","Unidentified Pelican","Pelecanus spp.",
+"1","PESA","Pectoral Sandpiper","Calidris melanotos",176653
+"1","PFSH","Pink-footed Shearwater","Puffinus creatopus",174547
+"1","PHVI","Philadelphia Vireo","Vireo philadelphicus",
+"1","PIGR","Pine Grosbeak","Pinicola enucleator",179205
+"1","PIPL","Piping Plover","Charadrius melodus",
+"1","PISI","Pine Siskin","Carduelis pinus",179233
+"1","PIWA","Pine Warbler","Dendroica pinus",178914
+"2","PIWH","Pilot Whale","Globicephala",180464
+"1","PIWO","Pileated Woodpecker","Dryocopus pileatus",178166
+"2","PKWH","Pygmy Killer Whale","Feresa attenuata",180460
+"5","PLAS","plastic","--",
+"5","PLBU","Painted Lady Butterfly","Vanessa cardui",188601
+"5","PMOW","Portuguese Man o' War","Physalia physalis",719181
+"5","POBE","Polar Bear","Ursus maritimus",180542
+"1","POJA","Pomarine Jaeger","Stercorarius pomarinus",176792
+"5","PONY","Pony","--",
+"1","POSP","Polynesian Storm-petrel","Nesofregetta fuliginosa",174661
+"1","PRAW","Prairie Warbler","Dendroica discolor",178918
+"1","PROW","Prothonotary Warbler","Protonotaria citrea",178846
+"2","PSDO","Pantropical Spotted Dolphin","Stenella attenuata",180430
+"2","PSWH","Pygmy Sperm Whale","Kogia breviceps",180491
+"1","PUFI","Purple Finch","Carpodacus purpureus",179186
+"1","PUMA","Purple Martin","Progne subis",178464
+"1","PUSA","Purple Sandpiper","Calidris maritima",176646
+"1","RAZO","Razorbill","Alca torda",176971
+"1","RBGR","Rose-breasted Grosbeak","Pheucticus ludovicianus",179139
+"1","RBGU","Ring-billed Gull","Larus delawarensis",176830
+"1","RBME","Red-breasted Merganser","Mergus serrator",175187
+"1","RBNU","Red-breasted Nuthatch","Sitta canadensis",178784
+"1","RBTR","Red-billed Tropicbird","Phaethon aethereus",174673
+"1","RBWO","Red-bellied Woodpecker","Melanerpes carolinus",178195
+"1","RCKI","Ruby-crowned Kinglet","Regulus calendula",179870
+"5","RCKW","rockweed","Pilea microphylla",19133
+"5","REBA","Red Bat","Lasiurus borealis",180016
+"1","RECR","Red Crossbill","Loxia curvirostra",179259
+"1","REDH","Redhead","Aythya americana",175125
+"1","REDP","Common or Hoary Redpoll","Carduelis flammea/hornemanni",
+"1","REEG","Reddish Egret","Egretta rufescens",174824
+"1","REKN","Red Knot","Calidris canutus",176642
+"1","REPH","Red Phalarope","Phalaropus fulicaria",554376
+"1","REVI","Red-eyed Vireo","Vireo olivaceous",179021
+"1","RFBO","Red-footed Booby","Sula sula",174707
+"1","RHAU","Rhinoceros Auklet","Cerorhinca monocerata",177023
+"1","RHWO","Red-headed Woodpecker","Melanerpes erythrocephalus",178186
+"2","RIDO","Risso's dolphin","Grampus griseus",180457
+"2","RISE","Ringed Seal","Pusa hispida",622018
+"1","RITD","Ringed Turtle-Dove","Streptopelia risoria",177136
+"2","RIWH","Right Whale","Eubalaena glacialis",180537
+"1","RLHA","Rough-legged Hawk","Buteo lagopus",175373
+"1","RNDU","Ring-necked Duck","Aythya collaris",175128
+"1","RNEP","Ring-necked Pheasant","Phasianus colchicus",175905
+"1","RNGR","Red-necked Grebe","Podiceps grisegena",174479
+"1","RNPH","Red-necked Phalarope","Phalaropus lobatus",176735
+"1","ROPI","Rock Pigeon","Columba livia",177071
+"1","ROSP","Roseate Spoonbill","Platalea ajaja ",174941
+"1","ROST","Roseate Tern","Sterna dougallii",176891
+"1","ROSW","Rough-Winged Swallow","Stelgidopteryx sp.",178439
+"1","ROYT","Royal Tern","Sterna maxima",176922
+"1","RSHA","Red-shouldered Hawk","Buteo lineatus",175359
+"2","RTDO","Rough-toothed Dolphin","Steno bredanensis",180417
+"1","RTHA","Red-tailed Hawk","Buteo jamaicensis",175350
+"1","RTHU","Ruby-throated Hummingbird","Archilochus colubris",178032
+"1","RTLO","Red-throated Loon","Gavia stellata",174474
+"1","RTTR","Red-tailed Tropicbird","Phaethon rubricauda",174679
+"1","RUBL","Rusty Blackbird","Euphagus carolinus",179091
+"1","RUDU","Ruddy Duck","Oxyura jamaicensis",175175
+"1","RUGR","Ruffed Grouse","Bonasa umbellus",175790
+"1","RUTU","Ruddy Turnstone","Arenaria interpres",176571
+"1","RWBL","Red-winged Blackbird","Agelaius phoeniceus",179045
+"1","SACR","Sandhill Crane","Grus canadensis",176177
+"4","SAFI","Sargassumfish","Histrio histrio",164520
+"1","SAGU","Sabine's Gull","Xema sabini",176866
+"4","SAIL","Sailfish","Istiophorus platypterus",172488
+"1","SAND","Sanderling","Calidris alba",176669
+"5","SARG","Sargassum","--",11389
+"1","SATE","Sandwich Tern","Sterna sandvicensis",176927
+"1","SAVS","Savannah Sparrow","Passerculus sandwichensis",179314
+"1","SBDO","Short-billed Dowitcher","Limnodromus griseus",176675
+"1","SBGU","Slaty-backed Gull","Larus schistisagus",176816
+"2","SBWH","Sowerby's Beaked Whale","Mesoplodon bidens",180515
+"1","SCAU","Unidentified Scaup","Aythya marila or A. affinis",
+"4","SCHA","Scalloped Hammerhead Shark","Sphyrna lewini",160508
+"1","SCRE","Unidentified screech-owl","--",
+"1","SCTA","Scarlet Tanager","Piranga olivacea",179883
+"1","SEOW","Short-eared Owl","Asio flammeus",177935
+"1","SEPL","Semipalmated Plover","Charadrius semipalmatus",176506
+"1","SESA","Semipalmated Sandpiper","Calidris pusilla",176667
+"2","SEWH","Sei Whale","Balaenoptera borealis",180526
+"1","SEWR","Sedge Wren","Cistothorus platensis",178605
+"2","SFWH","Short-finned Pilot Whale","Globicephala macrorhynchus",180466
+"1","SHAG","Shag","Phalacrocorax aristotelis",174733
+"4","SHAR","Unidentified shark","Elasmobranchii spp.",159786
+"1","SHOR","Unidentified shorebird","--",
+"4","SKTU","Skipjack Tuna","Katsuwonus pelamis",172401
+"3","SMTU","Unidentified Small turtle - Loggerhead, Green, Hawksbill, or Kemp's Ridley","--",
+"1","SNBU","Snow Bunting","Plectrophenax nivalis",179532
+"1","SNEG","Snowy Egret","Egretta thula",174813
+"1","SNGO","Snow Goose","Chen caerulescens",175038
+"1","SNOW","Snowy Owl","Bubo scandiacus",686683
+"1","SOGU","Sooty Gull","Larus hemprichii",176854
+"1","SORA","Sora","Porzana carolina",176242
+"1","SOSA","Solitary Sandpiper","Tringa solitaria",176615
+"1","SOSH","Sooty Shearwater","Puffinus griseus",174553
+"1","SOSP","Song Sparrow","Melospiza melodia",179492
+"1","SOTE","Sooty Tern","Sterna fuscata",176894
+"1","SPAR","Unidentified sparrow","Emberizidae",178838
+"2","SPDO","Unidentified Spotted Dolphins (Atlantic or Pantropical)","Stenella spp.",180428
+"1","SPEI","Spectacled Eider","Somateria fischeri",175161
+"5","SPEN","Salmon Pens","--",
+"1","SPGR","Spruce Grouse","Falcipennis canadensis",553896
+"1","SPGU","Spectacled Guillemot","Cepphus carbo",176994
+"4","SPMA","Spanish mackerels","Scomberomorus spp.",172434
+"1","SPPI","Sprague's Pipit","Anthus spragueii",178499
+"1","SPSA","Spotted Sandpiper","Actitis macularia",176612
+"1","SPSK","South Polar Skua","Stercorarius maccormicki",660062
+"2","SPWH","Sperm Whale","Physeter macrocephalus",180489
+"1","SSHA","Sharp-shinned Hawk","Accipiter striatus",175304
+"2","STDO","Striped Dolphin","Stenella coeruleoalba",180434
+"1","STEI","Steller's Eider","Polysticta stelleri",175153
+"1","STSA","Stilt Sandpiper","Calidris himantopus",554145
+"1","STSH","Short-tailed Shearwater","Puffinus tenuirostris",174554
+"5","SUBU","Sulfur Butterfly spp.","Coliadinae spp.",694016
+"1","SUSC","Surf Scoter","Melanitta perspicillata",175170
+"1","SWAL","Unidentified Swallow","Hirundinidae",178423
+"1","SWAN","Unidentified Swan","Olor spp.",174993
+"5","SWDA","Swamp Darner","Epiaeschna heros",101638
+"4","SWFI","Unidentified Swordfish spp.","Xiphiidae spp.",172480
+"1","SWIS","Swinhoe's Storm-petrel","Oceanodroma monorhis",174642
+"1","SWSP","Swamp Sparrow","Melospiza georgiana",179488
+"1","TAPE","Tahiti Petrel","Pseudobulweria rostrata",562522
+"1","TBMU","Thick-billed Murre","Uria lomvia",176978
+"2","TBWH","True's Beaked Whale","Mesoplodon mirus",
+"1","TEWA","Tennessee Warbler","Vermivora peregrina",178855
+"1","THGU","Thayer's Gull","Larus thayeri",176828
+"4","THHE","Thread Herrings","Opisthonema spp.",161747
+"1","TOSH","Townsend's Shearwater","Puffinus auricularis",174558
+"5","TOWR","Tower","--",
+"5","TRAN","transect point","--",
+"1","TRES","Tree Swallow","Tachycineta bicolor",178431
+"1","TRHE","Tricolored (Louisiana) Heron","Egretta tricolor ",
+"1","TRSP","Tristram's Storm-Petrel","Oceanodroma tristrami",174641
+"4","TUNA","Unidentified tuna","Scombridae",172398
+"1","TUPU","Tufted Puffin","Fratercula cirrhata",177032
+"3","TURT","Unidentified Sea Turtle","--",
+"1","TUSW","Tundra Swan","Cygnus columbianus",174987
+"1","TUTI","Tufted Titmouse","Baeolophus bicolor",554138
+"1","TUVU","Turkey Vulture","Cathartes aura",175265
+"1","UAHA","Unidentified Accipiter Hawk","Accipiter spp.",175299
+"1","UALB","Unidentified Albatross","Diomedeidae spp.",174513
+"5","UBAT","Unidentified Bat","--",
+"1","UBBG","Unidentified Great or Lesser Black-backed Gull","Larus marinus/fuscus",
+"2","UBKW","Unidentified Beaked Whale","Mesoplodon spp.",180506
+"1","UBST","Bridled or Sooty Tern","Sterna anaethetus/fuscata",
+"5","UBUT","Unidentified butterfly","--",
+"1","UCAT","Common or Arctic Tern","Sterna hirundo/paradisaea",
+"1","UCRT","Unidentified Common or Roseate Tern","Sterna hirundo/dougallii",
+"1","UDAB","Unidentified dabbling duck","--",
+"1","UDGS","Unidentified Duck, Goose, or Swan","Anseriformes spp.",174982
+"4","UFFI","Unidentified flying fish","Exocoetidae spp.",165431
+"5","UFOB","Unidentified flying object (animal-origin)","--",
+"1","UGOO","Unidentified Goose","--",
+"1","UGUI","Unidentified Guillemot","Cepphus spp.",176984
+"1","UHGP","Unidentified Hawaiian Petrel or Galapagos Petrel","Pterodroma sandwichensis/phaeopygia",
+"1","ULSB","Unidentified large shorebird","--",
+"1","UNAL","Unidentified Alcid","Alcidae spp.",176967
+"1","UNAM","Unidentified Seaside or Sharptailed Sparrow","Ammodramus spp.",179332
+"1","UNBI","Unidentified Bird","Aves",174371
+"1","UNBL","Unidentified Blackbird","Icteridae spp.",179030
+"1","UNBO","Unidentified Booby","Sula spp.",174697
+"2","UNBW","Unidentified Baleen Whale","Mysticeti spp.",552298
+"1","UNCA","Unidentified Calidris (Sandpiper, Sanderling, Dunlin, Red Knot)","Calidris spp.",
+"2","UNCD","Unidentified Common Dolphins","Delphinus spp.",180437
+"2","UNCE","Unidentified Cetacean","Cetacea spp.",180403
+"3","UNCH","Unidentified Cheloniidae species (Green Sea Turtle, Hawksbill Sea Turtle, and Flatback Sea Turtle)","Cheloniidae spp.",
+"1","UNCO","Unidentified Cormorant","Phalacrocorax spp",174714
+"1","UNCR","Unidentified Crow","Corvus spp.",179724
+"5","UNCT","??","--",
+"1","UNDD","Unidentified Diving/Sea Duck","Aythya spp.",175124
+"2","UNDO","Unidentified Dolphin","Delphinidae",180415
+"1","UNDU","Unidentified Duck","--",
+"1","UNEG","Unidentified Egret","--",
+"1","UNEI","Unidentified Eider","Somateria spp.",175154
+"4","UNEL","Unidentified elasmobranch (Shark, Ray, Skate)","Elasmobranch",
+"1","UNFI","Unidentified Finch","Carduelis spp.",179225
+"1","UNFL","Unidentified Flycatcher","Empidonax spp.",178337
+"1","UNFR","Unidentified Frigatebird","Fregata spp.",174762
+"2","UNFS","Unidentified Fin/Sei whale","Balaenoptera physalus/Balaenoptera borealis",
+"1","UNGB","Unidentified Goldeneye/Bufflehead","Bucephala spp.",175140
+"2","UNGD","Unidentified Spotted or Bottlenose Dolphin","Stenella or Tursiops",
+"1","UNGO","Unidentified Goldeneye","Bucephala spp.",175140
+"1","UNGR","Unidentified Grebe","Podiceps spp.",174478
+"1","UNGU","Unidentified Gull","--",
+"1","UNHE","Unidentified Heron","--",
+"1","UNHU","Unidentified Hummingbird","Trochilidae",
+"1","UNJA","Unidentified Jaeger","Stercorarius spp.",176791
+"5","UNJE","Unidentified jellyfish","Scyphozoa spp.",51483
+"5","UNKN","unknown","--",
+"1","UNLA","Unidentified large alcid (Razorbill or Murre)","--",
+"2","UNLD","Unidentified Lagenorhynchus dolphin","Lagenorhynchus sp.",
+"4","UNLF","Unidentified large fish","Osteichthyes spp.",161030
+"1","UNLG","Unidentified Large Gull","--",
+"1","UNLO","Unidentified Loon","Gavia spp.",174468
+"1","UNLR","Unidentified large rail","Rallidae",176205
+"1","UNLS","Unidentified Large Shearwater","--",
+"1","UNLT","Unidentified large Tern","--",
+"2","UNLW","Unidentified large whale","Cetacea spp.",180403
+"1","UNME","Unidentified Merganser","--",
+"2","UNMM","Unidentified Marine Mammal","Mammalia",179913
+"5","UNMO","Unidentified Moth","--",
+"1","UNMT","Unidentified medium tern","Sterna spp.",
+"1","UNMU","Unidentified Murre","Uria spp.",176973
+"1","UNNH","Unidentified Night Heron","--",
+"1","UNNI","Unidentified Nighthawk","--",
+"1","UNOR","Unidentified Oriole","Icterus spp.",179063
+"1","UNOW","Unidentified Owl","Strigidae",177854
+"1","UNPA","Unidentified Passerine (perching birds, songbirds)","--",
+"1","UNPE","Unidentified Petrel","Procellariidae",174532
+"1","UNPH","Unidentified Phalarope","Phalaropus spp.",176733
+"2","UNPO","Unidentified porpoise","--",
+"1","UNPR","Unidentified tubenose","Procellariidae",174532
+"1","UNPT","Unidentified Pterodroma (petrels)","Pterodroma spp.",174566
+"1","UNPU","Unidentified Puffin","Fratercula spp.",177024
+"4","UNRA","Unidentified ray","Rajiformes spp.",160806
+"2","UNRO","Unidentified Rorqual","Balaenopteridae spp.",180522
+"1","UNRP","Unidentified Raptor/ bird of prey","--",
+"1","UNSA","Unidentified small alcid (Puffin/Dovekie)","Alle alle/Fratercula arctica",
+"1","UNSC","Unidentified Scoter","Melanitta spp.",175162
+"2","UNSE","Unidentified Seal","Phocidae",180640
+"4","UNSF","Unidentified small fish","Osteichthyes spp.",161030
+"1","UNSG","Unidentified small gull","--",
+"1","UNSH","Unidentified Shearwater","Procellariidae",174532
+"1","UNSK","Unidentified Skua","Stercorarius spp.",176791
+"1","UNSP","Unidentified Storm-petrel","--",
+"4","UNSR","Unidentified stringray","Dasyatidae spp.",
+"1","UNSS","Unidentified Small Shearwater (Audubon's, Manx, or Little)","Puffinus lherminieri , P. puffinus, or P. assimilis",
+"1","UNST","Unidentified small Tern","Sterna spp.",176885
+"1","UNSU","Unidentified Sulid","Sulidae spp.",174696
+"2","UNSW","Unidentified small whale","Cetacea spp.",180403
+"1","UNTA","Unidentified Tanager","--",
+"1","UNTB","Unidentified Tropicbird","Phaethon spp.",174672
+"1","UNTE","Unidentified Tern","Sterna spp.",176885
+"1","UNTH","Unidentified Thrush","Turdidae spp.",179751
+"1","UNTL","Unidentified Teal","--",
+"4","UNTS","Unidentified thresher shark","--",
+"2","UNTW","Unidentified Toothed Whales","Odontoceti spp.",180404
+"1","UNVI","Unidentified Vireo","--",
+"1","UNWA","Unidentified Warbler","--",
+"2","UNWH","Unidentified Whale","Cetacea spp.",180403
+"1","UNYE","Unidentified Yellowlegs","Tringa melanoleuca or T. flavipes",
+"2","UNZI","Unidentified Ziphiid (beaked whale)","Ziphiidae",180493
+"1","USAC","Unidentified small Accipiter","--",
+"1","USAN","Unidentified Sandpiper","Scolopacidae spp.",176568
+"1","USOW","Unidentified small owl","--",
+"1","USSB","Unidentified small shorebird","--",
+"2","UTSE","Unidentified True Seal","Phocidae spp.",180640
+"1","VERM","Unidentified Vermivora","Vermivora",178851
+"1","VESP","Vesper Sparrow","Pooecetes gramineus",179366
+"1","VIRA","Virginia Rail","Rallus limicola",176221
+"5","WAGL","Wandering Glider","Pantala flavescens",101801
+"4","WAHO","Wahoo","Acanthocybium solandri",172451
+"2","WALR","Walrus","Odobenus rosmarus",180639
+"1","WAPI","Water Pipit","Anthus spinoletta",178489
+"2","WBDO","White-beaked Dolphin","Lagenorhynchus albirostris",180442
+"1","WBNU","White-breasted Nuthatch","Sitta carolinensis",178775
+"1","WBSP","White-bellied Storm-petrel","Fregetta grallaria",174656
+"1","WCSP","White-crowned Sparrow","Zonotrichia leucophrys",179455
+"1","WCTE","White-cheeked Tern","Sterna repressa",176914
+"1","WEGU","Western Gull","Larus occidentalis",176817
+"1","WESA","Western Sandpiper","Calidris mauri",176668
+"1","WEVI","White-eyed Vireo","Vireo griseus",178991
+"1","WFSP","White-faced Storm-petrel","Pelagodroma marina",174621
+"1","WHIB","White Ibis","Eudocimus albus",174930
+"1","WHIM","Whimbrel","Numenius phaeopus",176599
+"4","WHMA","White Marlin","Kajikia albida",768126
+"1","WHTE","White Tern","Gygis alba",176954
+"1","WILL","Willet","Catoptrophorus semipalmatus",176638
+"2","WIMA","West Indian Manatee","Trichechus manatus",180684
+"1","WIPH","Wilson's phalarope","Phalaropus tricolor",176736
+"1","WIPL","Wilson's Plover","Charadrius wilsonia",176517
+"1","WISN","Wilson's Snipe","Gallinago delicata",726048
+"1","WISP","Wilson's Storm-petrel","Oceanites oceanicus",174650
+"1","WITU","Wild Turkey","Meleagris gallopavo",176136
+"1","WIWA","Wilson's Warbler","Wilsonia pusilla",178973
+"1","WIWR","Winter Wren","Troglodytes troglodytes",178547
+"1","WODU","Wood Duck","Aix sponsa",175122
+"1","WOTH","Wood Thrush","Hylocichla mustelina",179777
+"1","WRSA","White-rumped Sandpiper","Calidris fuscicollis",176654
+"1","WRSP","Wedge-rumped Storm-petrel","Oceanodroma tethys",174638
+"2","WSDO","Atlantic White-sided Dolphin","Lagenorhynchus acutus",180443
+"1","WTSH","Wedge-tailed Shearwater","Puffinus pacificus",174550
+"1","WTSP","White-throated Sparrow","Zonotrichia albicollis",179462
+"1","WTTR","White-tailed Tropicbird","Phaethon lepturus",174676
+"1","WWBT","White-winged Black Tern","Chlidonias leucopterus",176958
+"1","WWCR","White-winged Crossbill","Loxia leucoptera",179268
+"1","WWDO","White-winged Dove","Zenaida asiatica",177121
+"1","WWGU","Unidentified white winged gull (Ross's Gull, Ivory Gull, Iceland Gull, Glaucous-winged Gull and Glaucous Gull)","genus Larus",
+"1","WWSC","White-winged Scoter","Melanitta fusca",175163
+"1","XAMU","Xantus' Murrelet","Synthliboramphus hypoleucus",177011
+"1","YBCH","Yellow-breasted Chat","Icteria virens",178964
+"1","YBCU","Yellow-billed Cuckoo","Coccyzus americanus",177831
+"1","YBFL","Yellow-bellied Flycatcher","Empidonax flaviventris",178338
+"1","YBSA","Yellow-bellied Sapsucker","Sphyrapicus varius",178202
+"1","YCNH","Yellow-crowned Night Heron","Nyctanassa violacea",174842
+"1","YESH","Yelkouan Shearwater","Puffinus yelkouan",562599
+"4","YETU","Yellowfin Tuna","Thunnus albacares",172423
+"1","YHBL","Yellow-headed Blackbird","Xanthocephalus xanthocephalus",179043
+"1","YLGU","Yellow-legged Gull","Larus cachinnans",554270
+"1","YNAL","Yellow-nosed Albatross","Thalassarche chlororhynchos",554452
+"1","YRWA","Yellow-rumped Warbler","Dendroica coronata",178891
+"1","YWAR","Yellow Warbler","Dendroica petechia",178878
+"5","ZOOP","zooplankton","--",
