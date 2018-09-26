@@ -1,7 +1,7 @@
 # nwasc 0.1.0
-
+* test data set time to work on verifing functions and writing draft vignette
 # nwasc 0.0.0.9005
-fixed .onLad
+* fixed .onLad
 
 # nwasc 0.0.0.9004
 *added .onLoad
