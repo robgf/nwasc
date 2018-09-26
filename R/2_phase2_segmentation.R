@@ -1,14 +1,3 @@
-#### Required ####
-library(maptools)
-library(rgeos)
-library(geosphere)
-library(dplyr)
-library(tibble)
-library(tidyr)
-library(zoo)
-set.seed(42)
-
-#### Main Function ####
 phase2_segmentCTS = function(observations,
                       tracks,
                       transects,
