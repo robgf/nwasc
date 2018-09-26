@@ -16,3 +16,7 @@ You can install the released version of nwasc from
 ``` r
 devtools::install_github("robgf/nwasc")
 ```
+
+Please note that the ‘nwasc’ project is released with a [Contributor
+Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this
+project, you agree to abide by its terms.
