@@ -189,7 +189,7 @@ phase2_segmentCTS = function(observations,
     bind_rows(., seg.ends) %>%
     arrange(dataset_id, transect_id, piece, seg_num, dist_cuml) %>%
     select(-dist_cuml) %>%
-    mutate(piece =as.integer(piece)) %>%
+    mutate(piece = as.integer(piece)) %>%
     group_by(transect_id, piece, seg_num) %>%
     mutate(
       seg_dist = round(max(seg_dist, na.rm = TRUE), 3),
@@ -304,7 +304,7 @@ phase2_segmentCTS = function(observations,
 
   #### create segmented df ####
   segmented = full_join(seg.mids, seg.obs, by = c("transect_id", "seg_num")) %>%
-    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NONE")) %>%
+    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NOT_AN_OBSERVATION")) %>%
     group_by(
       dataset_id,
       transect_id,
@@ -320,7 +320,7 @@ phase2_segmentCTS = function(observations,
     ) %>%
     summarise(count = sum(count)) %>%
     spread(spp_cd, count, fill = 0) %>%
-    # select(everything(), -matches('NONE')) %>%
+    select( -NOT_AN_OBSERVATION) %>%
     ungroup %>%
     mutate(transect_id = as.integer(transect_id))
 
