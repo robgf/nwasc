@@ -11,24 +11,19 @@
 # Kyle Dettloff
 # Modified 09-30-16
 
-suppressMessages(library(maptools))
-suppressMessages(library(rgeos))
-suppressMessages(library(geosphere))
-suppressMessages(library(dplyr))
-suppressMessages(library(tidyr))
-suppressMessages(library(lubridate))
+
 
 # read in dts and observation tables
 
 
 phase1_segmentDTS = function(observations, transects, v.spd = 10, occurences = FALSE) {
 
-  if(nrow(transects) == 0) stop("empty transect table")
+  if (nrow(transects) == 0) stop("empty transect table")
 
   # -------- prepare observation table to be paired with dts midpoints --------------------------------------------------
   # narrow all observations to only those on dts transects
   observations = observations %>% filter(transect_id %in% transects$transect_id) %>% select(-st_astext)
-  if(nrow(observations) == 0) stop("no observations present for given transects")
+  if (nrow(observations) == 0) stop("no observations present for given transects")
 
   # format times in dts table
   dts.time = transects %>%
@@ -109,7 +104,7 @@ phase1_segmentDTS = function(observations, transects, v.spd = 10, occurences = F
 
   # join midpoints and observations
   dts.final = full_join(midpoints, observations, by = "transect_id") %>%
-    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NONE"),
+    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NOT_AN_OBSERVATION"),
            seg_num = as.integer(1)
            ) %>%
     group_by(source_dataset_id, segmented_transect_id, transect_id, seg_num, start_dt, seg_dist,
@@ -119,13 +114,13 @@ phase1_segmentDTS = function(observations, transects, v.spd = 10, occurences = F
     if (!occurences) {
       # total species count
       dts.final = dts.final %>% summarise(count = sum(count)) %>%
-        spread(spp_cd, count, fill = 0) %>% select(everything(), -matches("NONE")) %>%
+        spread(spp_cd, count, fill = 0) %>% select(-NOT_AN_OBSERVATION) %>%
         ungroup %>% arrange(transect_id)
     }
     else if (occurences) {
       # number of species occurences
       dts.final = dts.final %>% select(-count) %>% summarise(noccur = n()) %>%
-        spread(spp_cd, noccur, fill = 0) %>% select(everything(), -matches("NONE")) %>%
+        spread(spp_cd, noccur, fill = 0) %>% select(-NOT_AN_OBSERVATION) %>%
         ungroup %>% arrange(transect_id)
     }
 

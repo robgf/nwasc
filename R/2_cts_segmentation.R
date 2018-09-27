@@ -1,13 +1,3 @@
-#### Required ####
-library(maptools)
-library(rgeos)
-library(geosphere)
-library(dplyr)
-library(tibble)
-library(tidyr)
-library(zoo)
-set.seed(42)
-
 #### Main Function ####
 phase1_segmentCTS = function(observations,
                       tracks,
@@ -306,7 +296,7 @@ phase1_segmentCTS = function(observations,
 
   #### create segmented df ####
   segmented = full_join(seg.mids, seg.obs, by = c("transect_id", "seg_num")) %>%
-    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NONE")) %>%
+    mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NOT_AN_OSERVATION")) %>%
     group_by(
       dataset_id,
       transect_id,
@@ -322,7 +312,7 @@ phase1_segmentCTS = function(observations,
     ) %>%
     summarise(count = sum(count)) %>%
     spread(spp_cd, count, fill = 0) %>%
-    select(everything(), -matches("NONE")) %>%
+    select(-NOT_AN_OSERVATION) %>%
     ungroup
 
   segmented = transects %>%
