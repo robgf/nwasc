@@ -24,6 +24,8 @@ seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
 
 
 
- segmented_seabird_catalogs <- bind_phases
- write_segmented_csv(segmented_seabird_catalogs)
-
+ segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
+write_segmented_csv(segmented_seabird_catalogs)
+zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+file.remove("segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+file.remove("segmented_results.zip")
