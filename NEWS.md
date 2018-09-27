@@ -1,4 +1,7 @@
 # nwasc 0.1.1
+* STABLE Point
+* Barebones Vignette started
+_Next Steps to flush out vignette_
 
 # nwasc 0.1.0.9000
 * Fixed Main functions to work correctly.
