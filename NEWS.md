@@ -1,4 +1,5 @@
 # nwasc 0.1.0.9000
+* Fixed Main functions to work correctly.
 
 # nwasc 0.1.0
 * test data set time to work on verifing functions and writing draft vignette

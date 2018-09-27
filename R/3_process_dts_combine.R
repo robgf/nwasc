@@ -100,7 +100,7 @@ phase1_segmentDTS = function(observations, transects, v.spd = 10, occurences = F
   # -------- pair observations with midpoints ---------------------------------------------------------------------------
   # keep only observations with matching dts transect IDs
   observations = observations %>% filter(transect_id %in% midpoints$transect_id)
-  if(nrow(observations) == 0) stop("no observations present for given transects")
+  if (nrow(observations) == 0) stop("no observations present for given transects")
 
   # join midpoints and observations
   dts.final = full_join(midpoints, observations, by = "transect_id") %>%
