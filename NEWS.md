@@ -1,6 +1,8 @@
 # nwasc 0.2.0
-
+* Segmentation code all functioning and last of segmentation script has been moved to a vignette.
+  
 # nwasc 0.1.1.9001
+* Moved source code to vignette
 
 # nwasc 0.1.1.9000
   *Build bare bone vignette
