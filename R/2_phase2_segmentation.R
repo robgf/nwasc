@@ -320,7 +320,7 @@ phase2_segmentCTS = function(observations,
     ) %>%
     summarise(count = sum(count)) %>%
     spread(spp_cd, count, fill = 0) %>%
-    select(everything(), -matches("NONE")) %>%
+    # select(everything(), -matches('NONE')) %>%
     ungroup %>%
     mutate(transect_id = as.integer(transect_id))
 
