@@ -1,4 +1,4 @@
-phase2_segmentCTS <- function(observations,
+segmentCTS <- function(observations,
                               tracks,
                               transects,
                               seg.length = 4,
@@ -37,10 +37,10 @@ phase2_segmentCTS <- function(observations,
   midpoints <- calculate_seg_midpoints(lineframe,projHOM)
 
   #### segmentation with midpoints ####
-  seg.mids <- place_midpoints(seg.all.new, midpoints)
+  seg.mids <- place_midpoints(seg.all.new, midpoints, transects)
 
   #### Place Observations ####
-  seg.obs <- place_observations(observations, seg.mids, lineframe, maxDist)
+  seg.obs <- place_observations(observations, seg.mids, lineframe, maxDist, projHOM)
 
   #### create segmented df ####
   segmented <- create_segmented_df(seg.mids, seg.obs, transects)

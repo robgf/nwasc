@@ -37,7 +37,7 @@ phase1_segmentCTS <- function(observations,
   midpoints <- calculate_seg_midpoints(lineframe,projHOM)
 
   #### segmentation with midpoints ####
-  seg.mids <- place_midpoints(seg.all.new, midpoints)
+  seg.mids <- place_midpoints(seg.all.new, midpoints, transects)
 
   #### Place Observations ####
   seg.obs <- place_observations(observations, seg.mids, lineframe, maxDist)

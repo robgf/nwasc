@@ -87,7 +87,7 @@ create_empty_segments <- function(seg) {
     mutate(empty_seg = 1)
 }
 
-create_all_segments <- function(seg, seg.empy, seg.length) {
+create_all_segments <- function(seg, seg.empty, seg.length) {
   seg %>%
     select(-tot_empty) %>%
     bind_rows(., seg.empty) %>%
@@ -248,7 +248,7 @@ assignPointsToLines <- function(points, lines, maxDist = NA) {
 }
 
 #### Function observation to closest line ####
-obs2Lines <- function(df, lineframe, maxDist) {
+obs2Lines <- function(df, lineframe, maxDist, projHOM) {
   points <- df %>%
     as.data.frame() %>%
     filter(!is.na(lat) & !is.na(long))
@@ -274,7 +274,7 @@ calculate_seg_midpoints <- function(lineframe,projHOM) {
     )
 }
 
-place_midpoints <- function(seg.all.new, midpoints) {
+place_midpoints <- function(seg.all.new, midpoints, transects) {
   seg.mids <- seg.all.new %>%
     select(-c(long, lat)) %>%
     distinct() %>%
@@ -298,11 +298,11 @@ place_midpoints <- function(seg.all.new, midpoints) {
 }
 
 
-place_observations <- function(observations, seg.mids, lineframe, maxDist) {
+place_observations <- function(observations, seg.mids, lineframe, maxDist, projHOM) {
   seg.obs <- observations %>%
     filter(transect_id %in% seg.mids$transect_id) %>%
     group_by(transect_id) %>%
-    do(obs2Lines(., lineframe, maxDist)) %>%
+    do(obs2Lines(., lineframe, maxDist, projHOM)) %>%
     ungroup()
 }
 

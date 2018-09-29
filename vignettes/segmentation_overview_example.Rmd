@@ -16,35 +16,45 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r}
+library(nwasc)
+```
 
-#source('R/2_phase2_segmentation.R')
-seg.dat.phase2 = phase2_segmentCTS(nwasc.ph2.obs.pre,
+
+```{r Segment Phase 2}
+seg.dat.phase2 = segmentCTS(nwasc.ph2.obs.pre,
                             nwasc.ph2.shp.pre,
                             nwasc.ph2.cts.dat,
                             seg.min = 0.0)
+```
 
 
 
 
-#source('~/boem_noaa/Phase I Data and Code/2_cts_segmentation.R')
-seg.dat.phase1.cts = phase1_segmentCTS(nwasc.ph1.obs.pre,
+
+```{r Segment Phase 1 CTS}
+seg.dat.phase1.cts = segmentCTS(nwasc.ph1.obs.pre,
                                 nwasc.ph1.shp.pre,
                                 nwasc.ph1.cts.dat,
                                 seg.min = 0.0)
+```
+
+
+```{r Segment Phase 1 DTS}
+seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
+                                nwasc.ph1.dts.dat)
+```
 
 
 
-
-
-#source('~/boem_noaa/Phase I Data and Code/3_process_dts_combine.R')
+```{r Finalize }
 seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
                                 nwasc.ph1.dts.dat)
 
+segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
+# write_segmented_csv(segmented_seabird_catalogs)
+# zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+# file.remove("segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+# file.remove("segmented_results.zip")
 
-
- segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
-write_segmented_csv(segmented_seabird_catalogs)
-zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
-file.remove("segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
-file.remove("segmented_results.zip")
-
+```
