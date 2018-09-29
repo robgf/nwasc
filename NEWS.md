@@ -1,4 +1,5 @@
 # nwasc 0.2.1
+* Fixed fubction calls to reference external package. 
 
 # nwasc 0.2.0
 * Segmentation code all functioning and last of segmentation script has been moved to a vignette.
