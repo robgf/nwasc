@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9000
+
 # nwasc 0.3.0
 * Functioning code, code works for vignette
 * Todo: webpage, vignette, object documentation
