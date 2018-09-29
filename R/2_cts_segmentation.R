@@ -19,7 +19,7 @@ phase1_segmentCTS = function(observations,
     ) %>%
 
     rowwise %>%
-      mutate(dist = distVincentySphere(c(long_i, lat_i), c(long, lat)) / 1000) %>%
+      mutate(dist = geosphere::distVincentySphere(c(long_i, lat_i), c(long, lat)) / 1000) %>%
       select(-c(long_i, lat_i, order)) %>%
     ungroup %>%
 
@@ -114,7 +114,7 @@ phase1_segmentCTS = function(observations,
     ungroup %>%
     arrange(dataset_id, transect_id, piece, seg_num, dist_cuml) %>%
     group_by(transect_id, piece) %>%
-    mutate(dist_cuml = na.locf(dist_cuml)) %>%
+    mutate(dist_cuml = zoo::na.locf(dist_cuml)) %>%
     group_by(transect_id, piece, seg_num) %>%
     mutate(seg_brk = as.integer(ifelse(row_number() == n() & seg_num != nseg,
                                        1,
@@ -122,10 +122,10 @@ phase1_segmentCTS = function(observations,
     select(-nseg) %>%
     group_by(transect_id, piece) %>%
     mutate(
-      long = na.locf(long),
-      lat = na.locf(lat),
-      long_lead = na.locf(lead(long), na.rm = FALSE, fromLast = TRUE),
-      lat_lead = na.locf(lead(lat), na.rm = FALSE, fromLast = TRUE)
+      long = zoo::na.locf(long),
+      lat = zoo::na.locf(lat),
+      long_lead = zoo::na.locf(lead(long), na.rm = FALSE, fromLast = TRUE),
+      lat_lead = zoo::na.locf(lead(lat), na.rm = FALSE, fromLast = TRUE)
     ) %>%
     rowwise %>%
     mutate(
@@ -134,7 +134,7 @@ phase1_segmentCTS = function(observations,
           ifelse(
             seg_brk == 0,
             NA,
-            bearing(
+            geosphere::bearing(
               c(long, lat),
               c(long_lead,
               lat_lead
@@ -156,7 +156,7 @@ phase1_segmentCTS = function(observations,
     ) %>%
     rowwise %>%
     mutate(coords_end = ifelse(is.na(heading), list(NA), list(
-      destPoint(c(long, lat), heading, dist_shy * 1000, f = 0)
+      geosphere::destPoint(c(long, lat), heading, dist_shy * 1000, f = 0)
     ))) %>%
     select(-c(heading, dist_shy)) %>%
     ungroup
@@ -189,9 +189,9 @@ phase1_segmentCTS = function(observations,
     mutate(
       seg_dist = round(max(seg_dist, na.rm = TRUE), 3),
       id = paste(
-        sprintf("%02d", transect_id),
-        sprintf("%02d", piece),
-        sprintf("%02d", seg_num),
+        sprintf("%06d", transect_id),
+        sprintf("%06d", piece),
+        sprintf("%06d", seg_num),
         sep = "-"
       )
       #id = (transect_id*10 + piece)*100000+seg_num
@@ -205,8 +205,8 @@ phase1_segmentCTS = function(observations,
     df %>%
       select(long, lat) %>%
       as.data.frame %>%
-      Line %>%
-      list
+      sp::Line() %>%
+      list()
   }
 
   #### create linelist ####
@@ -215,22 +215,22 @@ phase1_segmentCTS = function(observations,
     do(coords = listLines(.))
 
   #### define projHOOM ####
-  projHOM = "+proj=omerc +lonc=-75 +lat_0=35 +alpha=40 +k_0=0.9996 +ellps=GRS80 +datum=NAD83"
+  projHOM = getOption("nwasc.proj")
 
   #### define lineframe ####
   lineframe =
     mapply(x = linelist$coords,
            ids = linelist$id,
-           function(x, ids) Lines(x, ids)) %>%
-    SpatialLines(proj4string = CRS("+proj=longlat")) %>%
-    SpatialLinesDataFrame(as.data.frame(select(linelist, transect_id)),
+           function(x, ids) sp::Lines(x, ids)) %>%
+    sp::SpatialLines(proj4string = sp::CRS(projHOM)) %>%
+    sp::SpatialLinesDataFrame(as.data.frame(select(linelist, transect_id)),
                           match.ID = FALSE) %>%
-    spTransform(CRS(projHOM))
+    sp::spTransform(sp::CRS(projHOM))
 
 
   #### midpoints ####
-  midpoints = SpatialLinesMidPoints(lineframe) %>%
-    spTransform(CRS("+proj=longlat"))
+  midpoints = maptools::SpatialLinesMidPoints(lineframe) %>%
+    sp::spTransform(sp::CRS(projHOM))
   midpoints = midpoints %>%
     as.data.frame %>%
     select(coords.x1, coords.x2) %>%
@@ -265,11 +265,11 @@ phase1_segmentCTS = function(observations,
   #### Function send points to Line ####
   assignPointsToLines = function(points, lines, maxDist = NA) {
     if (!is.na(maxDist)) {
-      w = gWithinDistance(points, lines, dist = maxDist, byid = TRUE)
+      w = rgeos::gWithinDistance(points, lines, dist = maxDist, byid = TRUE)
       validPoints = apply(w, 2, any)
       points = points[validPoints, ]
     }
-    d = gDistance(points, lines, byid = TRUE) # distance matrix of each point to each segment
+    d = rgeos::gDistance(points, lines, byid = TRUE) # distance matrix of each point to each segment
     seg_num = apply(d, 2, which.min) # position of each nearest segment in lines object
     cbind(points@data, seg_num)
   }
@@ -280,9 +280,9 @@ phase1_segmentCTS = function(observations,
       as.data.frame %>%
       filter(!is.na(lat) & !is.na(long))
     # apply HOM projection
-    coordinates(points) = c("long", "lat")
-    proj4string(points) = CRS("+proj=longlat")
-    points = spTransform(points, CRS(projHOM))
+    sp::coordinates(points) = c("long", "lat")
+    sp::proj4string(points) = sp::CRS(projHOM)
+    points = sp::spTransform(points, sp::CRS(projHOM))
     lines = lineframe[lineframe@data$transect_id == df$transect_id[1], ]
     assignPointsToLines(points, lines, maxDist)
   }
@@ -311,7 +311,7 @@ phase1_segmentCTS = function(observations,
       spp_cd
     ) %>%
     summarise(count = sum(count)) %>%
-    spread(spp_cd, count, fill = 0) %>%
+    tidyr::spread(spp_cd, count, fill = 0) %>%
     select(-NOT_AN_OSERVATION) %>%
     ungroup
 
