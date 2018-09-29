@@ -1,4 +1,3 @@
-#### Main Function ####
 phase1_segmentCTS = function(observations,
                       tracks,
                       transects,
