@@ -1,5 +1,7 @@
 # nwasc 0.3.0
-
+* Functioning code, code works for vignette
+* Todo: webpage, vignette, object documentation
+* Next define input requirements.
 # nwasc 0.2.1.9000
 * Breaking up long CTS functions
 
