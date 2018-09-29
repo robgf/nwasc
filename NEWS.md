@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9001
+
 # nwasc 0.3.0.9000
 * checking Input requirements
 * Example data now minimal cols.
