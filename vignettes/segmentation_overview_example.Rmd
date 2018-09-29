@@ -48,8 +48,6 @@ seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
 
 
 ```{r Finalize }
-seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
-                                nwasc.ph1.dts.dat)
 
 segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
 # write_segmented_csv(segmented_seabird_catalogs)
