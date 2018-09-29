@@ -7,8 +7,8 @@ bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) 
 # rm(seg.dat.phase2, seg.dat.phase1.cts,seg.dat.phase1.dts)
 ### Save to csv
 write_segmented_csv <- function(segmented_seabird_catalogs) {
-  datetime = Sys.Date()
-  dft = 'combined_transects_3'
-  filenm = paste(paste("segmented_seabird_catalog",datetime,dft,sep = "-"),".csv")
-  write.csv(segmented_seabird_catalogs,file = filenm, row.names = FALSE)
+  datetime <- Sys.Date()
+  dft <- "combined_transects_3"
+  filenm <- paste(paste("segmented_seabird_catalog", datetime, dft, sep = "-"), ".csv")
+  write.csv(segmented_seabird_catalogs, file = filenm, row.names = FALSE)
 }
