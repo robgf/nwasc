@@ -1,3 +1,5 @@
+# nwasc 0.3.0
+
 # nwasc 0.2.1.9000
 * Breaking up long CTS functions
 
