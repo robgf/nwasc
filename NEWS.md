@@ -1,4 +1,8 @@
 # nwasc 0.4.0.9001
+* updated `Readme` with webpage name
+* Outline vignette
+* Fix travis-ci error
+* built outline vignette code
 
 # nwasc 0.4.0.9000
 * Update `Readme.rmd` and knitted

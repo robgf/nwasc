@@ -1,10 +1,10 @@
 ---
-title: "Vignette Title"
-author: "Vignette Author"
+title: "NWASC Segmentation Overview with Example"
+author: "Rob Fowelr"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{NWASC Segmentation Overview with Example}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,50 +16,43 @@ knitr::opts_chunk$set(
 )
 ```
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
-
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
-
-## Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
-
-## Styles
-
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
-## Figures
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+```{r}
+library(nwasc)
 ```
 
-You can enable figure captions by `fig_caption: yes` in YAML:
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
+```{r Segment Phase 2, eval=FALSE, include=TRUE}
+seg.dat.phase2 = nwasc_segmentCTS(nwasc.ph2.obs.pre,
+                            nwasc.ph2.shp.pre,
+                            nwasc.ph2.cts.dat,
+                            seg.min = 0.0)
 ```
 
-Also a quote using `>`:
 
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+
+
+
+```{r Segment Phase 1 CTS, eval=FALSE, include=TRUE}
+seg.dat.phase1.cts = nwasc_segmentCTS(nwasc.ph1.obs.pre,
+                                nwasc.ph1.shp.pre,
+                                nwasc.ph1.cts.dat,
+                                seg.min = 0.0)
+```
+
+
+```{r Segment Phase 1 DTS, eval=FALSE, include=TRUE}
+seg.dat.phase1.dts = nwasc_segmentDTS(nwasc.ph1.dts.obs.dat,
+                                nwasc.ph1.dts.dat)
+```
+
+
+
+```{r Finalize, eval=FALSE, include=TRUE}
+
+segmented_seabird_catalogs <- nwasc_bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
+# nwasc_write_segmented_csv(segmented_seabird_catalogs)
+# zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+# file.remove("segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+# file.remove("segmented_results.zip")
+
+```
