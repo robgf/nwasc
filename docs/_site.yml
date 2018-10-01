@@ -1,30 +1,12 @@
-title: AvianNet
-name: AvianNet
+title: nwasc
+name: nwasc
 output_dir: '.'
 navbar:
-  title: AvianNet
+  title: nwasc
   right:
   - text: Home
     href: index.html
     icon: fa-home
-  - text: Location
-    href: Location.html
-    icon: fa-map-pin
-#  - text: Background
-#    href: background.html
-#  - text: Goals
-#    href: goals.html
-#  - text: Resources
-#    href: resources.html
-#  - text: Progress
-#    href: progress.html
-#  - text: Results
-#    href: results.html
-#  - text: About
-#    href: about.html
-  - text: 1425
-    href: comic_inspiration.html
-    icon: fa-lightbulb
 output:
   html_document:
     toc: yes
