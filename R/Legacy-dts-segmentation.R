@@ -1,22 +1,19 @@
-# Process dts survey data in NWASC database
-# Returns wide-form dataframe with processed data
-
-# Requires observation table with lat/long for each sighting and transect table with single row for each transect id
-
-# v.spd sets assumed vessel speed in knots when vessel speed is missing
-# Calculates species counts by default; set occurences = TRUE for number of flock sightings
-
-# Distances are in nautical miles
-
-# Kyle Dettloff
-# Modified 09-30-16
-
-
-
-# read in dts and observation tables
-
-
 #'  Process dts survey data in NWASC database
+#'
+#' Process dts survey data in NWASC database
+#' Returns wide-form dataframe with processed data
+#'
+#' Requires observation table with lat/long for each sighting and transect table with single row for each transect id
+#'
+#' v.spd sets assumed vessel speed in knots when vessel speed is missing
+#' Calculates species counts by default; set occurences = TRUE for number of flock sightings
+#'
+#' Distances are in nautical miles
+#'
+#' Kyle Dettloff
+#' Modified 09-30-16
+#'
+#'  read in dts and observation tables
 #'
 #' @param observations df of observations from phase 1 DTS surveys
 #' @param transects df of transect information from phase 1 DTS surveys

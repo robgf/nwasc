@@ -1,8 +1,10 @@
 # nwasc 0.3.0.9002
+* Update SegmentDTS documentation, moving Kyle's description into Roxygen
+* Cleaned up `News.md`
 
 # nwasc 0.3.0.9001
 * Update SegmentDTS documentation
-* Simlified SegmentDTS function name
+* Simplified SegmentDTS function name
 
 # nwasc 0.3.0.9000
 * checking Input requirements
@@ -17,7 +19,7 @@
 * Breaking up long CTS functions
 
 # nwasc 0.2.1
-* Fixed fubction calls to reference external package. 
+* Fixed function calls to reference external package. 
 
 # nwasc 0.2.0
 * Segmentation code all functioning and last of segmentation script has been moved to a vignette.
@@ -30,19 +32,19 @@
   
 # nwasc 0.1.1
 * STABLE Point
-* Barebones Vignette started
+* Bare-bones Vignette started
 _Next Steps to flush out vignette_
 
 # nwasc 0.1.0.9000
 * Fixed Main functions to work correctly.
 * Remaining Functions Work
-* Barebones Vignette
+* Bare-bones Vignette
 
 # nwasc 0.1.0
-* test data set time to work on verifing functions and writing draft vignette
+* test data set time to work on verifying functions and writing draft vignette
 
 # nwasc 0.0.0.9005
-* fixed .onLad
+* fixed .onLoad
 
 # nwasc 0.0.0.9004
 *added .onLoad
@@ -54,17 +56,17 @@ _Next Steps to flush out vignette_
 * fixed data names
 * save data into data/
 * Moved OA/QC to data-raw folder and remaining code to R/
-  Last of source order code in proj main directory awaiting migratin to a vignette
+  Last of source order code in proj. main directory awaiting migration to a vignette
 * Need to note that most of the code for this package actually is in the data wrangling   and will go away with a clean database to work off. 
 
 # nwasc 0.0.0.9001
-* Barebones Readme
+* Bare-bones Readme
 * Migrated old code
-* Intial Github push
+* Initial Github push
 
 # nwasc 0.0.0.9000
-* Intial pacakge Setup
+* Initial package Setup
 
 # nwasc 0.0.0
-* Intial package setup
+* Initial package setup
 * Added a `NEWS.md` file to track changes to the package.
