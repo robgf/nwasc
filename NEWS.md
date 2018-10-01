@@ -1,3 +1,5 @@
+# nwasc 0.5.0
+
 # nwasc 0.4.0.9002
 * Correct Travis-CI warnings
 * Re-knit `Readme`
