@@ -37,7 +37,7 @@
 #'                                 nwasc.ph1.shp.pre,
 #'                                 nwasc.ph1.cts.dat,
 #'                                 seg.min = 0.0)
-segmentCTS <- function(observations,
+nwasc_segmentCTS <- function(observations,
                        tracks,
                        transects,
                        seg.length = 4,

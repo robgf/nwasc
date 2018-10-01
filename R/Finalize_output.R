@@ -14,7 +14,7 @@
 #' @examples
 #' segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
 #'
-bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) {
+nwasc_bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) {
   bind_rows(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) %>%
     mutate_at(vars(-c(source_dataset_id:survey_method_cd)), funs(replace(., is.na(.), 0))) %>%
     arrange(transect_id, seg_num)
@@ -32,7 +32,7 @@ bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) 
 #' @examples
 #' write_segmented_csv(segmented_seabird_catalogs)
 #'
-write_segmented_csv <- function(segmented_seabird_catalogs) {
+nwasc_write_segmented_csv <- function(segmented_seabird_catalogs) {
   datetime <- Sys.Date()
   dft <- "-DRAFT_VER-"
   filenm <- paste(paste("segmented_seabird_catalog", datetime, dft, sep = "-"), ".csv")

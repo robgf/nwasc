@@ -4,7 +4,7 @@
 #'   tracks: (this historically was also created from shapefiles example in rew-data/)
 #'     "lat", "long", "transect_id", "dataset_id, "piece", "order".
 #'
-#' @inheritParams segmentCTS
+#' @inheritParams nwasc_segmentCTS
 #'
 #' @return df segmented trakcs
 #' @family nwasc.internals
@@ -117,7 +117,7 @@ create_empty_segments <- function(seg) {
 #'
 #' @param seg  df segmented trakcs
 #' @param seg.empty df of empty segments
-#' @inheritParams segmentCTS
+#' @inheritParams nwasc_segmentCTS
 #'
 #' @return df of all segmetns
 #' @family nwasc.internals
@@ -357,7 +357,7 @@ assignPointsToLines <- function(points, lines, maxDist = NA) {
 #'
 #' @param df df of filtered observations
 #' @param lineframe spatial object of segments
-#' @inheritParams segmentCTS
+#' @inheritParams nwasc_segmentCTS
 #'
 #' @return spatial line df
 #' @family nwasc.internals
@@ -443,7 +443,7 @@ place_midpoints <- function(seg.all.new, midpoints, transects) {
 #' @param observations df of observations
 #' @param seg.mids df of segments with midopoints
 #' @param lineframe spatial dataframe
-#' @inheritParams segmentCTS
+#' @inheritParams nwasc_segmentCTS
 #'
 #' @return df of segments with  observations
 #' @family nwasc.internals

@@ -26,7 +26,7 @@
 #'
 #' @examples
 #' seg.dat.phase1.dts = segmentDTS(nwasc.ph1.dts.obs.dat, nwasc.ph1.dts.dat)
-segmentDTS <- function(observations, transects, v.spd = 10, occurences = FALSE) {
+nwasc_segmentDTS <- function(observations, transects, v.spd = 10, occurences = FALSE) {
   if (nrow(transects) == 0) stop("empty transect table")
 
   # -------- prepare observation table to be paired with dts midpoints --------------------------------------------------

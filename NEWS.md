@@ -1,4 +1,7 @@
 # nwasc 0.3.0.9007
+* rename export function to have preface nwasc_
+* documented package
+* determined all needed funcions imported
 
 # nwasc 0.3.0.9006
 * function documentation works
