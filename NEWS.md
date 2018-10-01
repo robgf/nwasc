@@ -1,6 +1,10 @@
 # nwasc 0.4.0.9000
 * Update `Readme.rmd` and knitted
 * Add webpage example 
+* bare bone webpage up
+* GitHub Live
+* turning on travis-ci
+
 
 # nwasc 0.4.0
 * Objects all documented
