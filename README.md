@@ -7,6 +7,8 @@
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
 status](https://travis-ci.org/robgf/nwasc.svg?branch=master)](https://travis-ci.org/robgf/nwasc)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/robgf/nwasc?branch=master&svg=true)](https://ci.appveyor.com/project/robgf/nwasc)
 
 The goal of nwasc is to segment survey data from the [Northwest Atlantic
 Seabid Catalog

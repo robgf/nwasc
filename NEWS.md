@@ -1,5 +1,5 @@
 # nwasc 0.5.0.9000
-
+* add Appvoyuer
 # nwasc 0.5.0
 * Passing internal Check
 * Todo: Vignette, Readme, external Travis pass
