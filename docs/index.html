@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>AvianNet Home</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+
+.section h2 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h3 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h4 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h5 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h6 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+#TOC {
+  display: none !important;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">AvianNet</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="Location.html">
+    <span class="fa fa-map-pin"></span>
+     
+    Location
+  </a>
+</li>
+<li>
+  <a href="comic_inspiration.html">
+    <span class="fa fa-lightbulb"></span>
+     
+    1425
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">AvianNet Home</h1>
+
+</div>
+
+
+<p><img src="AvianNet_logo.png" /></p>
+<div id="photo-tagging-for-aerial-wildlife-surveys-a-2018-national-day-of-civic-hacking-project" class="section level1">
+<h1>Photo tagging for aerial wildlife surveys: a 2018 National Day of Civic Hacking project</h1>
+<div id="when-sat.-11-aug-2018" class="section level3">
+<h3>When: Sat. 11 Aug 2018</h3>
+<p>From: 9:30 am - 4:00 pm</p>
+</div>
+<div id="where-national-wildlife-visitors-center" class="section level3">
+<h3>Where: National Wildlife Visitors’ Center</h3>
+<p>10901 Scarlet Tangier Loop, Laurel, MD 20708 <a href="https://www.openstreetmap.org/#map=17/39.02601/-76.79860&amp;layers=N">(map)</a></p>
+</div>
+<div id="register-today-google-form" class="section level3">
+<h3>Register Today: <a href="https://goo.gl/forms/HW16YwsEolcJb03n2">Google Form</a></h3>
+<p><em>We are hosting a civic hacking project to develop a photo tagging platform to support the development of an Artificial Intelligence/Machine Learning (AI/ML) workflow suitable for aerial survey photos of waterfowl and marine birds.</em></p>
+<p>More location information will be availble <a href="./Location.html">here</a>.</p>
+<p>(read time &lt; 10 mins)</p>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Remote sensing technololgy has become increasingly cost-effective and accessible for wildlife data collection, but there remains a critical roadblock: the need to be able to use artificial intelligence (AI) and machine learning (ML) techniques to processing and analysis the large number of images that digital surveys would generate. Cameras deployed with aerial bird surveys produce terabytes of images. A first step in processing this data is the time consuming and tedious effort of sorting out pictures of empty terrain from those containing birds.</p>
+<p>Development Need #1: a workflow for photo sorting and tagging to support aerial digital survey efforts and AI/ML research efforts. To begin the work on this process members of the Patuxent US FWS and USGS Community will host a National Day of Civic Hacking event on Saturday 11 August 2018.</p>
+<p>This webpage and it’s sub-pages (cellphones see upper right) are intended to inform and coordinate interested humans (or nonhuman AI’s) for the National Day of Civic Hacking event, the follow-on work, and a landing page for final results.</p>
+</div>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<div id="national-day-of-civic-hacking" class="section level3">
+<h3>National Day of Civic Hacking</h3>
+<p><sub> Following description comes from [Code for America](<a href="https://www.codeforamerica.org" class="uri">https://www.codeforamerica.org</a> site. </sub></p>
+<p><a href="https://www.codeforamerica.org">Code for America</a>, a “network of people making government work for the people, by the people, in the 21st century”, annually encourages interested people to participate in a National Day of Civic Hacking project.</p>
+<p>The <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking">National Day of Civic Hacking</a> is a nationwide day of action to bring together civic leaders to work with our local governments to tackle some of our toughest challenges.</p>
+<p>Some types of successful events from the past have been:</p>
+<ul>
+<li>Hackathons: Events where people come in with ideas for an app and create prototypes at the event.</li>
+<li>City Camps: Unconference <em>[sic]</em> events where people discuss the problems in their city and create the connections necessary to solve them</li>
+<li>Design Camps: Events where we use user-centered design to reimagine government services.</li>
+</ul>
+</div>
+<div id="us-fws-and-usgs-patuxent-2017-project" class="section level3">
+<h3>US FWS and USGS Patuxent 2017 Project</h3>
+<p>In August 2017 a hackathon event was held at the <a href="https://www.pwrc.usgs.gov/">PWRC</a> with the goal of redesigning and modernizing the Harvest Survey website.</p>
+<p>(Description to be added)</p>
+</div>
+</div>
+<div id="aviannet-goals" class="section level2">
+<h2>AvianNet Goals</h2>
+<div id="comic-inspiration" class="section level3">
+<h3>Comic Inspiration</h3>
+<p><img src="https://imgs.xkcd.com/comics/tasks.png" title="In the 60s, Marvin Minsky assigned a couple of undergrads to spend the summer programming a computer to use a camera to identify objects in a scene. He figured they&#39;d have the problem solved by the end of the summer. Half a century later, we&#39;re still working on it." /></p>
+<p><sub> <a href="./comic_inspiration.html">more info about comic</a> </sub></p>
+</div>
+<div id="teach-the-machine" class="section level3">
+<h3>Teach the Machine</h3>
+<p><em>Our primary goal is to develop a workflow for photo tagging to support aerial digital survey efforts and support AI/ML research efforts. Focusing on an app/interface for humans to generate training sets of images for the AI/ML process.</em></p>
+<p>AI/ML techniques require teaching the machine what we see. It is truly an education by example. We feed it lots of images and indicate which one contains targets (birds in this case) and which ones don’t. Through the magic of math and computer stuff, the AI learns which pictures contain targets and which don’t. Our goal is to construct a method for human viewers to annotate images. The initial development will focus on tagging photos that do and do not contain birds. The resulting photo sets can be used to create an algorithm to automatically identify images with targets (birds).</p>
+<p>Our goal is to build a method to display sections of large images to a user and allow the user to indicate whether (and possibly where) they see birds; these results then need to be summarized to classify the original image. Most of our user and programmers are familiar with R, so it may be a natural language for parts of this project, while Python would also be suitable for some aspects.</p>
+</div>
+<div id="the-machine-uprising" class="section level3">
+<h3>The Machine Uprising</h3>
+<p><em>The forward-looking stretch goal is to set up a functioning process to filter images based on the training set created from the first goal.</em></p>
+<p>We want to be lazy and have the machines do our work for us. We are hoping to have access to some AI/ML resources to play with existing technologies. Possibilities include … (to be filled in as we are successful at borrowing/begging).</p>
+</div>
+</div>
+<div id="methods" class="section level2">
+<h2>Methods</h2>
+<p>Well, this is the point of the National Day of Civic Hacking event. Bring your hammers and wrenches, and we will figure it out.</p>
+<p>Presently the Methodology is:</p>
+<ol style="list-style-type: decimal">
+<li>Put a lot of smart people in a room together</li>
+<li>We point at shoe boxes of images</li>
+<li>–Something happens– (aka Hacking/Computer Stuff/Socializing)</li>
+<li>The machines start doing our work for us</li>
+<li><strong>Goal Reached:</strong> filtered images</li>
+</ol>
+<p>A subpage may be created as plans are flushed out.</p>
+</div>
+<div id="timeline" class="section level2">
+<h2>Timeline</h2>
+<ul>
+<li>August 11: National Day of Civic Hacking</li>
+<li>Autumn 2018: Follow up work</li>
+</ul>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p><a href="./results.html">Results</a> from this project will be shared here when available.</p>
+</div>
+<div id="contribute-to-this-page" class="section level2">
+<h2>Contribute to this page</h2>
+<p>This page is written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and hosted on <a href="https://github.com">GitHub</a>. Please feel free to send suggestions of changes to Rob Fowler at <a href="mailto:robert_fowler@fws.gov">robert_fowler@fws.gov</a> or submit a pull request to <a href="https://github.com/robgf/aviannet" class="uri">https://github.com/robgf/aviannet</a>. (For Githubbers, please fork and create a dev branch to be pulled.)</p>
+<p>More GitHub <a href="./webpage_edits">guidlines here</a> (Incomplete)</p>
+<hr />
+<p><sub>(ver. 1.1.0) Last Updated:2018-07-26 15:04:47,<br />
+<em>Project GitHub repo:</em> <a href="https://github.com/robgf/aviannet" class="uri">https://github.com/robgf/aviannet</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Skynet_(Terminator)"><em>AvianNet is Genisys</em></a> </sub></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

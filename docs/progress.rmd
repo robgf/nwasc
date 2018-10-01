@@ -1,0 +1,15 @@
+---
+title: Progress
+---
+
+```{r, child ="_header.rmd"}
+```
+<!--
+### Informing the Community
+#*RDT Update, 
+ On Aug 11 the Patuxent FWS and USGS community will host a National Day of Civic Hacking event.  Participants will help design workflow and write code for the initial processing of photos taken during aerial surveys for marine birds.  The project will make possible the creation of AI training sets from aerial photo surveys. This effort will begin addressing the challenge of using artificial intelligence and machine learning techniques in the analysis of aerial surveys.   -->
+* Google Form is out
+* 2018-06-21: Webpage released at ver. 0.1.0 still incomplete but with some structure.
+
+```{r, child ="_footer.rmd"}
+```

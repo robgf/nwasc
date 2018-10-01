@@ -1,0 +1,40 @@
+title: AvianNet
+name: AvianNet
+output_dir: '.'
+navbar:
+  title: AvianNet
+  right:
+  - text: Home
+    href: index.html
+    icon: fa-home
+  - text: Location
+    href: Location.html
+    icon: fa-map-pin
+#  - text: Background
+#    href: background.html
+#  - text: Goals
+#    href: goals.html
+#  - text: Resources
+#    href: resources.html
+#  - text: Progress
+#    href: progress.html
+#  - text: Results
+#    href: results.html
+#  - text: About
+#    href: about.html
+  - text: 1425
+    href: comic_inspiration.html
+    icon: fa-lightbulb
+output:
+  html_document:
+    toc: yes
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+      print: no
+    theme: simplex
+    highlight: tango
+    css: style.css
+    lib_dir: site_libs
+    self_contained: no
+

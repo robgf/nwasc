@@ -1,0 +1,21 @@
+---
+title: "Inspriation and xkcd #1452"
+---
+
+```{r, child ="_header.rmd"}
+```
+
+# Comic Inspriation 
+Some of the inspiration for this project comes from [xkcd](https://xkcd.com) web comic.   Particully comic [#1452](https://xkcd.com/1425/)
+
+
+![](https://imgs.xkcd.com/comics/tasks.png "In the 60s, Marvin Minsky assigned a couple of undergrads to spend the summer programming a computer to use a camera to identify objects in a scene. He figured they'd have the problem solved by the end of the summer. Half a century later, we're still working on it.")
+
+A expliantion of this comic can be found at: https://www.explainxkcd.com/wiki/index.php/1425:_Tasks
+
+
+## Flickr attempt to address this challenge
+Flickr addressed the challenge in the above comic.  Their solution was an app at the now defunck parkorbird.flickr.com.  However, their approach and others will be noted on our background tab.
+
+```{r, child ="_footer.rmd"}
+```
