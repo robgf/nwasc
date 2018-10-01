@@ -4,6 +4,10 @@ test_that("multiplication works", {
   expect_equal(2 * 2, 4)
 })
 
+test_that(".onLoad works", {
+  expect_equal(require(nwasc), TRUE)
+})
+
 test_that("datasets are data.frame", {
   expect_is(nwasc.ph1.cts.dat, "data.frame")
   expect_is(nwasc.ph1.dts.dat, "data.frame")
