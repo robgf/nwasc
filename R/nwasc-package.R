@@ -13,6 +13,7 @@
 #' nwasc_bind_phases: Binds phase 1 and phase 2 data and fixes NA counts
 #'
 #' nwasc_write_segmented_csv: writes a date stamped .csv of the segmented data
+#' @import rgdal
 #' @import dplyr magrittr
 #' @importFrom stats dist runif
 #' @importFrom utils write.csv
