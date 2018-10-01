@@ -1,4 +1,5 @@
 # nwasc 0.3.0.9005
+* Documented `segmentation_utils.R`
 
 # nwasc 0.3.0.9004
 * Documented `finilize_output.R`
