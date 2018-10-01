@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9002
+
 # nwasc 0.3.0.9001
 * Update SegmentDTS documentation
 * Simlified SegmentDTS function name
