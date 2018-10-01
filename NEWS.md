@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9008
+
 # nwasc 0.3.0.9007
 * rename export function to have preface nwasc_
 * documented package
