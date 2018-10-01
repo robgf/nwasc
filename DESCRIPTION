@@ -32,7 +32,8 @@ Suggests:
     testthat,
     roxygen2 (>= 6.1.0),
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 Encoding: UTF-8
 Language: en-US
 LazyData: true
