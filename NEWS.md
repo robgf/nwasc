@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9006
+
 # nwasc 0.3.0.9005
 * Documented `segmentation_utils.R`
 
