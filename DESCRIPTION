@@ -26,7 +26,8 @@ Imports:
     zoo,
     maptools,
     geosphere,
-    methods
+    methods,
+    rgdal
 Suggests: 
     spelling (>= 1.2),
     testthat,
