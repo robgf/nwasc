@@ -38,12 +38,12 @@
 #'                                 nwasc.ph1.cts.dat,
 #'                                 seg.min = 0.0)
 segmentCTS <- function(observations,
-                              tracks,
-                              transects,
-                              seg.length = 4,
-                              seg.tol = 0.5,
-                              seg.min = seg.length * seg.tol,
-                              maxDist = NA) {
+                       tracks,
+                       transects,
+                       seg.length = 4,
+                       seg.tol = 0.5,
+                       seg.min = seg.length * seg.tol,
+                       maxDist = NA) {
   #### seg ####
   seg <- segment_tracks(tracks, seg.length, seg.tol)
 
@@ -60,7 +60,7 @@ segmentCTS <- function(observations,
   seg.ends <- duplicate_endpoints(end.pts)
 
   #### seg.all.new ####
-  seg.all.new <- complete_segments(seg.all,seg.ends, seg.min)
+  seg.all.new <- complete_segments(seg.all, seg.ends, seg.min)
 
   #### create linelist ####
   linelist <- seg.all.new %>%
@@ -73,7 +73,7 @@ segmentCTS <- function(observations,
   lineframe <- define_lineframe(linelist, projHOM)
 
   #### midpoints ####
-  midpoints <- calculate_seg_midpoints(lineframe,projHOM)
+  midpoints <- calculate_seg_midpoints(lineframe, projHOM)
 
   #### segmentation with midpoints ####
   seg.mids <- place_midpoints(seg.all.new, midpoints, transects)

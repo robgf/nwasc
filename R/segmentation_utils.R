@@ -17,12 +17,12 @@ segment_tracks <- function(tracks, seg.length, seg.tol) {
     group_by(transect_id, piece) %>%
     mutate(
       long_i = lag(long,
-                   default = first(long),
-                   order_by = order
+        default = first(long),
+        order_by = order
       ),
       lat_i = lag(lat,
-                  default = first(lat),
-                  order_by = order
+        default = first(lat),
+        order_by = order
       )
     ) %>%
     rowwise() %>%
@@ -57,8 +57,8 @@ segment_tracks <- function(tracks, seg.length, seg.tol) {
       ),
       seg_odd =
         ifelse(dist_odd == 0,
-               0,
-               ceiling(runif(1, 0, nseg))
+          0,
+          ceiling(runif(1, 0, nseg))
         ),
       seg_num = ifelse(
         nseg == 1 | dist_cuml == 0,
@@ -153,8 +153,8 @@ create_all_segments <- function(seg, seg.empty, seg.length) {
     mutate(dist_cuml = zoo::na.locf(dist_cuml)) %>%
     group_by(transect_id, piece, seg_num) %>%
     mutate(seg_brk = as.integer(ifelse(row_number() == n() & seg_num != nseg,
-                                       1,
-                                       0
+      1,
+      0
     ))) %>%
     select(-nseg) %>%
     group_by(transect_id, piece) %>%
@@ -389,7 +389,7 @@ obs2Lines <- function(df, lineframe, maxDist, projHOM) {
 #'
 #' @examples
 #' midpoints <- calculate_seg_midpoints(lineframe,projHOM)
-calculate_seg_midpoints <- function(lineframe,projHOM) {
+calculate_seg_midpoints <- function(lineframe, projHOM) {
   midpoints <- maptools::SpatialLinesMidPoints(lineframe) %>%
     sp::spTransform(sp::CRS(projHOM)) %>%
     as.data.frame() %>%

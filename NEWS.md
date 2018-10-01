@@ -1,4 +1,6 @@
 # nwasc 0.3.0.9006
+* function documentation works
+* tidy styled all r code
 
 # nwasc 0.3.0.9005
 * Documented `segmentation_utils.R`
