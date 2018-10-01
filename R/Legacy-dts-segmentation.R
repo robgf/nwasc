@@ -21,7 +21,7 @@
 #' @param occurences boolean flag  Calculates species counts by default (FALSE);
 #'  set occurences = TRUE for number of flock sightings
 #'
-#' @return
+#' @return df wide-form dataframe with processed data
 #' @export
 #'
 #' @examples

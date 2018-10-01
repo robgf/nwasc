@@ -1,8 +1,10 @@
 .onAttach <- function(libname, pkgname) {
+  # Print a mesgage when attaching package
   packageStartupMessage("nwasc segmentation package  loaded")
 }
 
 .onLoad <- function(libname, pkgname) {
+  # Add options and only set if they haven't been set already
   op <- options()
   op.nwasc <- list(
     nwasc.name = "Rob Fowler",

@@ -9,13 +9,19 @@
 \if{html}{\figure{logo.png}{options: align='right'}}
 
 The nwasc package was written by FWS for BOEM to segment transect 
-  survey data from the Northwest Atlantic Seabird Catalog (maintained by FWS). 
-  Each transect is segmented into fixed length segments with the remaineder 
-  placed according to a set rule. Observations are tallied by segment and 
-  transect.
+    survey data from the Northwest Atlantic Seabird Catalog (maintained by FWS). 
+    Each transect is segmented into fixed length segments with the remaineder 
+    placed according to a set rule. Observations are tallied by segment and 
+    transect.
 }
 \author{
 \strong{Maintainer}: Robert Fowler \email{robert_fowler@fws.gov}
+
+Other contributors:
+\itemize{
+  \item Kyle Dettloff [contributor]
+  \item Kaycee Coleman [contributor]
+}
 
 }
 \keyword{internal}
