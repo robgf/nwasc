@@ -16,7 +16,20 @@
 # read in dts and observation tables
 
 
-phase1_segmentDTS <- function(observations, transects, v.spd = 10, occurences = FALSE) {
+#'  Process dts survey data in NWASC database
+#'
+#' @param observations df of observations from phase 1 DTS surveys
+#' @param transects df of transect information from phase 1 DTS surveys
+#' @param v.spd numeric approx. speed of vessel
+#' @param occurences boolean flag  Calculates species counts by default (FALSE);
+#'  set occurences = TRUE for number of flock sightings
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' seg.dat.phase1.dts = segmentDTS(nwasc.ph1.dts.obs.dat, nwasc.ph1.dts.dat)
+segmentDTS <- function(observations, transects, v.spd = 10, occurences = FALSE) {
   if (nrow(transects) == 0) stop("empty transect table")
 
   # -------- prepare observation table to be paired with dts midpoints --------------------------------------------------

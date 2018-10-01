@@ -41,7 +41,7 @@ seg.dat.phase1.cts = segmentCTS(nwasc.ph1.obs.pre,
 
 
 ```{r Segment Phase 1 DTS}
-seg.dat.phase1.dts = phase1_segmentDTS(nwasc.ph1.dts.obs.dat,
+seg.dat.phase1.dts = segmentDTS(nwasc.ph1.dts.obs.dat,
                                 nwasc.ph1.dts.dat)
 ```
 

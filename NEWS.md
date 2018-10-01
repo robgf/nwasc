@@ -1,4 +1,6 @@
 # nwasc 0.3.0.9001
+* Update SegmentDTS documentation
+* Simlified SegmentDTS function name
 
 # nwasc 0.3.0.9000
 * checking Input requirements
