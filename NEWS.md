@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9003
+
 # nwasc 0.3.0.9002
 * Update SegmentDTS documentation, moving Kyle's description into Roxygen
 * Cleaned up `News.md`
