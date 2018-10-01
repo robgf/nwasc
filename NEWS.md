@@ -1,4 +1,6 @@
 # nwasc 0.5.0.9001
+* add a load unit test
+* add coveralls
 
 # nwasc 0.5.0.9000
 * add Appvoyuer

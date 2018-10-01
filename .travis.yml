@@ -10,3 +10,4 @@ before_install:
   - sudo apt-get install --yes libudunits2-dev libproj-dev libgeos-dev libgdal-dev
 after_success:
     - Rscript -e 'covr::codecov()'
+    - Rscript -e 'covr::coveralls()'
