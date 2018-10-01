@@ -1,4 +1,6 @@
 # nwasc 0.5.0
+* Passing internal Check
+* Todo: Vignette, Readme, external Travis pass
 
 # nwasc 0.4.0.9002
 * Correct Travis-CI warnings
