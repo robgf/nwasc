@@ -8,7 +8,7 @@
 \describe{
 \item{long}{longitude}
 \item{lat}{latitude}
-\item{transect_id}{Id of transecet}
+\item{transect_id}{Id of transect}
 \item{spp_cd}{species code}
 \item{count}{observation count}
 }}
@@ -19,7 +19,7 @@
 nwasc.ph1.obs.pre
 }
 \description{
-A daset example of a cleaned up query of phase 1 observation information
+A dataset example of a cleaned up query of phase 1 observation information
 from the Northwest Atlantic Seabird Catalog
 }
 \keyword{datasets}

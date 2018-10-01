@@ -20,7 +20,9 @@ spatial line df
 Assign Points To Lines
 }
 \examples{
+\dontrun{
 assignPointsToLines(points, lines, maxDist)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{calculate_seg_midpoints}},

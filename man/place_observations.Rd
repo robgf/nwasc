@@ -9,11 +9,13 @@ place_observations(observations, seg.mids, lineframe, maxDist, projHOM)
 \arguments{
 \item{observations}{df of observations}
 
-\item{seg.mids}{df of segments with midopoints}
+\item{seg.mids}{df of segments with midpoints}
 
 \item{lineframe}{spatial dataframe}
 
 \item{maxDist}{maximum distance a observation is allowed from a segment NA ignores this feature}
+
+\item{projHOM}{projection string}
 }
 \value{
 df of segments with  observations
@@ -22,7 +24,9 @@ df of segments with  observations
 Place Observations
 }
 \examples{
+\dontrun{
 seg.obs <- place_observations(observations, seg.mids, lineframe, maxDist, projHOM)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

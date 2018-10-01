@@ -17,10 +17,11 @@ nwasc_bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
 df wide form segmented data from NWASC with columns of species counts
 }
 \description{
-Combines the three pieces of the segment catalog and replaces missing value observatins
+Combines the three pieces of the segment catalog and replaces missing value observations
 with a 0 count
 }
 \examples{
+\dontrun{
 segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
-
+}
 }

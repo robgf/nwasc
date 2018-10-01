@@ -20,7 +20,9 @@ df segmented nwasc data with midpoint and observations
 Combine midpoints, summarizes observations and filter non-observations
 }
 \examples{
+\dontrun{
 segmented <- create_segmented_df(seg.mids, seg.obs, transects)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

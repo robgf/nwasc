@@ -8,4 +8,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^archive$
-
+nwasc_seg.png
+^docs$

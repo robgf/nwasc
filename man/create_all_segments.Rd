@@ -7,20 +7,22 @@
 create_all_segments(seg, seg.empty, seg.length)
 }
 \arguments{
-\item{seg}{df segmented trakcs}
+\item{seg}{df segmented tracks}
 
 \item{seg.empty}{df of empty segments}
 
 \item{seg.length}{numeric desired segment length}
 }
 \value{
-df of all segmetns
+df of all segments
 }
 \description{
 Combines non-empty and empty segments
 }
 \examples{
+\dontrun{
 seg.all <- create_all_segments(seg, seg.empty, seg.length)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

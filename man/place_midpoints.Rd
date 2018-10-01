@@ -20,7 +20,9 @@ df of segments with midpoint coordinates
 Place Midpoints
 }
 \examples{
+\dontrun{
 seg.mids <- place_midpoints(seg.all.new, midpoints, transects)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

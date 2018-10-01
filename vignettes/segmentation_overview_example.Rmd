@@ -1,6 +1,6 @@
 ---
 title: "NWASC Segmentation Overview with Example"
-author: "Rob Fowelr"
+author: "Rob Fowler"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >

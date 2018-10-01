@@ -1,9 +1,13 @@
 # nwasc 0.4.0.9002
+* Correct Travis-CI warnings
+* Re-knit `Readme`
+* Fixing typos
+* Passes internal checks
 
 # nwasc 0.4.0.9001
 * updated `Readme` with webpage name
 * Outline vignette
-* Fix travis-ci error
+* Fix Travis-ci error
 * built outline vignette code
 
 # nwasc 0.4.0.9000
@@ -11,7 +15,7 @@
 * Add webpage example 
 * bare bone webpage up
 * GitHub Live
-* turning on travis-ci
+* turning on Travis-ci
 
 
 # nwasc 0.4.0
@@ -21,7 +25,7 @@
 # nwasc 0.3.0.9009
 
 # nwasc 0.3.0.9008
-* documented data setsuse_
+* documented data sets use_
 * minor typo corrections
 
 # nwasc 0.3.0.9007

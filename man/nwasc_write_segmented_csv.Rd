@@ -10,7 +10,7 @@ nwasc_write_segmented_csv(segmented_seabird_catalogs)
 \item{segmented_seabird_catalogs}{segmented nwasc dataframe}
 }
 \value{
-csv with date and dafrt name
+csv with date and draft name
 }
 \description{
 Save segmentation results to a .csv file
@@ -20,6 +20,7 @@ Save segmentation results to a .csv file
 }
 
 \examples{
+\dontrun{
 write_segmented_csv(segmented_seabird_catalogs)
-
+}
 }

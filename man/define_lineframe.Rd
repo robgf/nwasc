@@ -7,9 +7,9 @@
 define_lineframe(linelist, projHOM)
 }
 \arguments{
-\item{linelist}{spatail Line object}
+\item{linelist}{spatial Line object}
 
-\item{projHOM}{projecton}
+\item{projHOM}{projection}
 }
 \value{
 spatial dataframe
@@ -18,7 +18,9 @@ spatial dataframe
 Define Lineframe
 }
 \examples{
+\dontrun{
 lineframe <- define_lineframe(linelist, projHOM)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

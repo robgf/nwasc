@@ -7,7 +7,7 @@
 calculate_segment_endpoints(seg.all)
 }
 \arguments{
-\item{seg.all}{df of all segmetns}
+\item{seg.all}{df of all segments}
 }
 \value{
 df location of segment endpoints
@@ -16,7 +16,9 @@ df location of segment endpoints
 Calculates the endpoints of each segment
 }
 \examples{
+\dontrun{
 end.pts <- calculate_segment_endpoints(seg.all)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

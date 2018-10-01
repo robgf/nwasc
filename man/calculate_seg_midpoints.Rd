@@ -18,7 +18,9 @@ df of segment midpoints
 Calculate Segment Midpoints
 }
 \examples{
+\dontrun{
 midpoints <- calculate_seg_midpoints(lineframe,projHOM)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

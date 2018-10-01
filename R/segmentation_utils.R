@@ -1,16 +1,18 @@
-#' Segment CTS trakcs
+#' Segment CTS tracks
 #'
 #' @section Required Names:
-#'   tracks: (this historically was also created from shapefiles example in rew-data/)
+#'   tracks: (this historically was also created from shapefiles example in raw-data/)
 #'     "lat", "long", "transect_id", "dataset_id, "piece", "order".
 #'
 #' @inheritParams nwasc_segmentCTS
 #'
-#' @return df segmented trakcs
+#' @return df segmented tracks
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg <- segment_tracks(tracks, seg.length, seg.tol)
+#' }
 segment_tracks <- function(tracks, seg.length, seg.tol) {
   tracks %>%
     distinct(long, lat, piece, transect_id, .keep_all = TRUE) %>%
@@ -90,7 +92,9 @@ segment_tracks <- function(tracks, seg.length, seg.tol) {
 #'
 #' @family nwasc.internals
 #' @examples
+#' \dontrun{
 #' seg.empty <- create_empty_segments(seg)
+#' }
 create_empty_segments <- function(seg) {
   seg %>%
     ungroup() %>%
@@ -115,15 +119,17 @@ create_empty_segments <- function(seg) {
 #'
 #' Combines non-empty and empty segments
 #'
-#' @param seg  df segmented trakcs
+#' @param seg  df segmented tracks
 #' @param seg.empty df of empty segments
 #' @inheritParams nwasc_segmentCTS
 #'
-#' @return df of all segmetns
+#' @return df of all segments
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.all <- create_all_segments(seg, seg.empty, seg.length)
+#' }
 create_all_segments <- function(seg, seg.empty, seg.length) {
   seg %>%
     select(-tot_empty) %>%
@@ -209,13 +215,15 @@ create_all_segments <- function(seg, seg.empty, seg.length) {
 #'
 #' Calculates the endpoints of each segment
 #'
-#' @param seg.all df of all segmetns
+#' @param seg.all df of all segments
 #'
 #' @return df location of segment endpoints
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' end.pts <- calculate_segment_endpoints(seg.all)
+#' }
 calculate_segment_endpoints <- function(seg.all) {
   seg.all %>%
     select(-empty_seg) %>%
@@ -230,7 +238,7 @@ calculate_segment_endpoints <- function(seg.all) {
 
 #' Duplicate Endpoint
 #'
-#' Duplicate endpoints to creat both end and begin coordinates for each segment
+#' Duplicate endpoints to create both end and begin coordinates for each segment
 #'
 #' @param end.pts df location of segment endpoints
 #'
@@ -238,7 +246,9 @@ calculate_segment_endpoints <- function(seg.all) {
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.ends <- duplicate_endpoints(end.pts)
+#' }
 duplicate_endpoints <- function(end.pts) {
   end.pts %>%
     select(-seg_dist) %>%
@@ -254,15 +264,17 @@ duplicate_endpoints <- function(end.pts) {
 #' @section WARNING!: transects, pieces and segments limited to 10,000 each.
 #' If more segments are required modify the buffer created in the `sprintf(` term
 #'
-#' @param seg.all  df of all segmetns
+#' @param seg.all  df of all segments
 #' @param seg.ends df of begin and end coordinates of each segment
-#' @param seg.min calculated shortest length of a valid segmetn
+#' @param seg.min calculated shortest length of a valid segment
 #'
-#' @return df completes segmetns
+#' @return df completes segments
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.all.new <- complete_segments(seg.all,seg.ends, seg.min)
+#' }
 complete_segments <- function(seg.all, seg.ends, seg.min) {
   seg.all %>%
     filter(is.na(empty_seg)) %>%
@@ -289,15 +301,17 @@ complete_segments <- function(seg.all, seg.ends, seg.min) {
 
 #' Create Spatial Lines
 #'
-#' @param df grouped df of segmetns
+#' @param df grouped df of segments
 #'
-#' @return spatial Line objcet
+#' @return spatial Line object
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' linelist <- seg.all.new %>%
 #' group_by(transect_id, id) %>%
 #'   do(coords = listLines(.))
+#' }
 listLines <- function(df) {
   df %>%
     select(long, lat) %>%
@@ -308,14 +322,16 @@ listLines <- function(df) {
 
 #' Define Lineframe
 #'
-#' @param linelist spatail Line object
-#' @param projHOM  projecton
+#' @param linelist spatial Line object
+#' @param projHOM  projection
 #'
 #' @return spatial dataframe
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' lineframe <- define_lineframe(linelist, projHOM)
+#' }
 define_lineframe <- function(linelist, projHOM) {
   df.linelst <- as.data.frame(select(linelist, transect_id))
   #### define lineframe ####
@@ -341,7 +357,9 @@ define_lineframe <- function(linelist, projHOM) {
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' assignPointsToLines(points, lines, maxDist)
+#' }
 assignPointsToLines <- function(points, lines, maxDist = NA) {
   if (!is.na(maxDist)) {
     w <- rgeos::gWithinDistance(points, lines, dist = maxDist, byid = TRUE)
@@ -357,16 +375,19 @@ assignPointsToLines <- function(points, lines, maxDist = NA) {
 #'
 #' @param df df of filtered observations
 #' @param lineframe spatial object of segments
+#' @param projHOM project string
 #' @inheritParams nwasc_segmentCTS
 #'
 #' @return spatial line df
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.obs <- observations %>%
 #' filter(transect_id %in% seg.mids$transect_id) %>%
 #'   group_by(transect_id) %>%
 #'     do(obs2Lines(., lineframe, maxDist, projHOM))
+#' }
 obs2Lines <- function(df, lineframe, maxDist, projHOM) {
   points <- df %>%
     as.data.frame() %>%
@@ -388,7 +409,9 @@ obs2Lines <- function(df, lineframe, maxDist, projHOM) {
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' midpoints <- calculate_seg_midpoints(lineframe,projHOM)
+#' }
 calculate_seg_midpoints <- function(lineframe, projHOM) {
   midpoints <- maptools::SpatialLinesMidPoints(lineframe) %>%
     sp::spTransform(sp::CRS(projHOM)) %>%
@@ -413,7 +436,9 @@ calculate_seg_midpoints <- function(lineframe, projHOM) {
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.mids <- place_midpoints(seg.all.new, midpoints, transects)
+#' }
 place_midpoints <- function(seg.all.new, midpoints, transects) {
   seg.mids <- seg.all.new %>%
     select(-c(long, lat)) %>%
@@ -441,15 +466,18 @@ place_midpoints <- function(seg.all.new, midpoints, transects) {
 #' Place Observations
 #'
 #' @param observations df of observations
-#' @param seg.mids df of segments with midopoints
+#' @param seg.mids df of segments with midpoints
 #' @param lineframe spatial dataframe
+#' @param projHOM projection string
 #' @inheritParams nwasc_segmentCTS
 #'
 #' @return df of segments with  observations
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' seg.obs <- place_observations(observations, seg.mids, lineframe, maxDist, projHOM)
+#' }
 place_observations <- function(observations, seg.mids, lineframe, maxDist, projHOM) {
   seg.obs <- observations %>%
     filter(transect_id %in% seg.mids$transect_id) %>%
@@ -470,7 +498,9 @@ place_observations <- function(observations, seg.mids, lineframe, maxDist, projH
 #' @family nwasc.internals
 #'
 #' @examples
+#' \dontrun{
 #' segmented <- create_segmented_df(seg.mids, seg.obs, transects)
+#' }
 create_segmented_df <- function(seg.mids, seg.obs, transects) {
   segmented <- full_join(seg.mids, seg.obs, by = c("transect_id", "seg_num")) %>%
     mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NOT_AN_OSERVATION")) %>%

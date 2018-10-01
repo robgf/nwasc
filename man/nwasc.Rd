@@ -15,11 +15,11 @@ The nwasc functions: all exported functions begin with "nwasc_"
 
 nwasc_SegmentCTS: Segments CTS type data returning a wide format
 
-nwasc_SegmentDTS: Segmetns DTS type data returning a wide format
+nwasc_SegmentDTS: Segments DTS type data returning a wide format
 
-nwasc_bind_phases: Binds phase 1 and phase 2 data and fixs NA counts
+nwasc_bind_phases: Binds phase 1 and phase 2 data and fixes NA counts
 
-nwasc_write_segmented_csv: writes a date stamped .csv of the segmetned data
+nwasc_write_segmented_csv: writes a date stamped .csv of the segmented data
 }
 
 \author{

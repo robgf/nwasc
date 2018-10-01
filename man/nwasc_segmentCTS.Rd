@@ -8,7 +8,7 @@ nwasc_segmentCTS(observations, tracks, transects, seg.length = 4,
   seg.tol = 0.5, seg.min = seg.length * seg.tol, maxDist = NA)
 }
 \arguments{
-\item{observations}{df of observations from observeration table}
+\item{observations}{df of observations from observation table}
 
 \item{tracks}{df of observations from tracks table (legacy translated from shapefiles)}
 
@@ -16,9 +16,9 @@ nwasc_segmentCTS(observations, tracks, transects, seg.length = 4,
 
 \item{seg.length}{numeric desired segment length}
 
-\item{seg.tol}{numeric minimal proption of \code{seg.length} to be considered a segment}
+\item{seg.tol}{numeric minimal proportion of \code{seg.length} to be considered a segment}
 
-\item{seg.min}{calculated shortest length of a valid segmetn}
+\item{seg.min}{calculated shortest length of a valid segment}
 
 \item{maxDist}{maximum distance a observation is allowed from a segment NA ignores this feature}
 }
@@ -33,9 +33,9 @@ This is a wrapper function that takes queries from the observations, tracks and 
 The following columns are need from each of the tables.
 transects:
 "start_dt", "dataset_id", "source_dataset_id",
-"segmented_transect_id" (renamed from source_transect_id in queury!)
+"segmented_transect_id" (renamed from source_transect_id in query!)
 "transect_id", "transect_width_nb", "survey_type_cd", "survey_method_cd"
-tracks: (this historically was also created from shapefiles example in rew-data/)
+tracks: (this historically was also created from shapefiles example in raw-data/)
 "lat", "long", "transect_id", "dataset_id, "piece", "order".
 observations:
 "transect_id", "lat", "long", "spp_cd", "count"
@@ -47,6 +47,7 @@ with special attention to renaming source_transect_id as "segmented_transect_id"
 }
 
 \examples{
+\dontrun{
 seg.dat.phase2 = segmentCTS(nwasc.ph2.obs.pre,
                             nwasc.ph2.shp.pre,
                             nwasc.ph2.cts.dat,
@@ -56,4 +57,5 @@ seg.dat.phase1.cts = segmentCTS(nwasc.ph1.obs.pre,
                                 nwasc.ph1.shp.pre,
                                 nwasc.ph1.cts.dat,
                                 seg.min = 0.0)
+}
 }

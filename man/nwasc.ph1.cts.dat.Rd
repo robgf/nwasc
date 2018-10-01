@@ -3,16 +3,17 @@
 \docType{data}
 \name{nwasc.ph1.cts.dat}
 \alias{nwasc.ph1.cts.dat}
-\title{Example of NWASC Phase 1 CTS Tranect Data}
+\title{Example of NWASC Phase 1 CTS Transect Data}
 \format{A data frame with 55901 rows and 8 variables:
 \describe{
+\item{dataset_id}{Id of source dataset}
 \item{start_dt}{Start date}
 \item{survey_method_cd}{Methodology of survey}
 \item{survey_type_cd}{Survey type code}
 \item{source_dataset_id}{Id of source dataset}
-\item{transect_id}{Id of transecet}
+\item{transect_id}{Id of transect}
 \item{segmented_transect_id}{source_transect_id from catalog}
-\item{transect_width_nb}{width of transect when availiable}
+\item{transect_width_nb}{width of transect when available }
 }}
 \source{
 \url{https://github.com/USFWS/AMAPPS/tree/master/NWASC}
@@ -21,7 +22,7 @@
 nwasc.ph1.cts.dat
 }
 \description{
-A daset example of a cleaned up query of phase 1 transect information
+A dataset example of a cleaned up query of phase 1 transect information
 from the Northwest Atlantic Seabird Catalog
 }
 \keyword{datasets}

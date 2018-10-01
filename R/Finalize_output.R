@@ -1,7 +1,7 @@
 
 #' Combine Phase 1 DTS & CTS segmented data with Phase 2 CTS
 #'
-#' Combines the three pieces of the segment catalog and replaces missing value observatins
+#' Combines the three pieces of the segment catalog and replaces missing value observations
 #' with a 0 count
 #'
 #' @param seg.dat.phase2 df segmented phase 2 data
@@ -12,8 +12,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' segmented_seabird_catalogs <- bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
-#'
+#'}
 nwasc_bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) {
   bind_rows(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts) %>%
     mutate_at(vars(-c(source_dataset_id:survey_method_cd)), funs(replace(., is.na(.), 0))) %>%
@@ -25,13 +26,14 @@ nwasc_bind_phases <- function(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1
 #'
 #' @param segmented_seabird_catalogs segmented nwasc dataframe
 #'
-#' @return csv with date and dafrt name
+#' @return csv with date and draft name
 #' @section WARNING!: this may be a very large file.  zipping and removing is advised
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' write_segmented_csv(segmented_seabird_catalogs)
-#'
+#' }
 nwasc_write_segmented_csv <- function(segmented_seabird_catalogs) {
   datetime <- Sys.Date()
   dft <- "-DRAFT_VER-"

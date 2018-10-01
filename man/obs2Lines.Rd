@@ -12,6 +12,8 @@ obs2Lines(df, lineframe, maxDist, projHOM)
 \item{lineframe}{spatial object of segments}
 
 \item{maxDist}{maximum distance a observation is allowed from a segment NA ignores this feature}
+
+\item{projHOM}{project string}
 }
 \value{
 spatial line df
@@ -20,10 +22,12 @@ spatial line df
 Place Observations on Segment Line
 }
 \examples{
+\dontrun{
 seg.obs <- observations \%>\%
 filter(transect_id \%in\% seg.mids$transect_id) \%>\%
   group_by(transect_id) \%>\%
     do(obs2Lines(., lineframe, maxDist, projHOM))
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

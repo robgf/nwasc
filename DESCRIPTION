@@ -9,7 +9,7 @@ Authors@R: c(
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: The nwasc package was written by FWS for BOEM to segment transect 
     survey data from the Northwest Atlantic Seabird Catalog (maintained by FWS). 
-    Each transect is segmented into fixed length segments with the remaineder 
+    Each transect is segmented into fixed length segments with the remainder 
     placed according to a set rule. Observations are tallied by segment and 
     transect.
 License: GPL-3
@@ -25,10 +25,11 @@ Imports:
     broom,
     zoo,
     maptools,
-    geosphere
+    geosphere,
+    methods
 Suggests: 
     spelling (>= 1.2),
-    testthat (>= 2.0.0),
+    testthat,
     roxygen2 (>= 6.1.0),
     knitr,
     rmarkdown

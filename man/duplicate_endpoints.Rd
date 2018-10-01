@@ -13,10 +13,12 @@ duplicate_endpoints(end.pts)
 df of begin and end coordinates of each segment
 }
 \description{
-Duplicate endpoints to creat both end and begin coordinates for each segment
+Duplicate endpoints to create both end and begin coordinates for each segment
 }
 \examples{
+\dontrun{
 seg.ends <- duplicate_endpoints(end.pts)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

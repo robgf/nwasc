@@ -7,14 +7,14 @@
 complete_segments(seg.all, seg.ends, seg.min)
 }
 \arguments{
-\item{seg.all}{df of all segmetns}
+\item{seg.all}{df of all segments}
 
 \item{seg.ends}{df of begin and end coordinates of each segment}
 
-\item{seg.min}{calculated shortest length of a valid segmetn}
+\item{seg.min}{calculated shortest length of a valid segment}
 }
 \value{
-df completes segmetns
+df completes segments
 }
 \description{
 -Completes the segments by combining endpoints with segment information
@@ -26,7 +26,9 @@ If more segments are required modify the buffer created in the \code{sprintf(} t
 }
 
 \examples{
+\dontrun{
 seg.all.new <- complete_segments(seg.all,seg.ends, seg.min)
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

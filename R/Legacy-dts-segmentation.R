@@ -6,7 +6,7 @@
 #' Requires observation table with lat/long for each sighting and transect table with single row for each transect id
 #'
 #' v.spd sets assumed vessel speed in knots when vessel speed is missing
-#' Calculates species counts by default; set occurences = TRUE for number of flock sightings
+#' Calculates species counts by default; set occurrences = TRUE for number of flock sightings
 #'
 #' Distances are in nautical miles
 #'
@@ -19,13 +19,15 @@
 #' @param transects df of transect information from phase 1 DTS surveys
 #' @param v.spd numeric approx. speed of vessel
 #' @param occurences boolean flag  Calculates species counts by default (FALSE);
-#'  set occurences = TRUE for number of flock sightings
+#'  set occurrences = TRUE for number of flock sightings
 #'
 #' @return df wide-form dataframe with processed data
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' seg.dat.phase1.dts = segmentDTS(nwasc.ph1.dts.obs.dat, nwasc.ph1.dts.dat)
+#' }
 nwasc_segmentDTS <- function(observations, transects, v.spd = 10, occurences = FALSE) {
   if (nrow(transects) == 0) stop("empty transect table")
 
@@ -153,7 +155,7 @@ nwasc_segmentDTS <- function(observations, transects, v.spd = 10, occurences = F
       arrange(transect_id)
   }
   else if (occurences) {
-    # number of species occurences
+    # number of species occurrences
     dts.final <- dts.final %>%
       select(-count) %>%
       summarise(noccur = n()) %>%

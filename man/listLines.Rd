@@ -7,18 +7,20 @@
 listLines(df)
 }
 \arguments{
-\item{df}{grouped df of segmetns}
+\item{df}{grouped df of segments}
 }
 \value{
-spatial Line objcet
+spatial Line object
 }
 \description{
 Create Spatial Lines
 }
 \examples{
+\dontrun{
 linelist <- seg.all.new \%>\%
 group_by(transect_id, id) \%>\%
   do(coords = listLines(.))
+}
 }
 \seealso{
 Other nwasc.internals: \code{\link{assignPointsToLines}},

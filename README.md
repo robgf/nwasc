@@ -5,13 +5,15 @@
 
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![Travis build
+status](https://travis-ci.org/robgf/nwasc.svg?branch=master)](https://travis-ci.org/robgf/nwasc)
 
 The goal of nwasc is to segment survey data from the [Northwest Atlantic
 Seabid Catalog
 (NWASC)](https://github.com/USFWS/AMAPPS/tree/master/NWASC).
 
 An example of package usage is contained in the package vignette and on
-the github.io webpage …
+the github.io webpage <https://robgf.github.io/nwasc/index.html>
 
 ## Installation
 

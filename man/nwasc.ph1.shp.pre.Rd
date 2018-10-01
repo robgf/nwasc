@@ -6,13 +6,12 @@
 \title{Example of NWASC Phase 1 CTS Track Data}
 \format{A data frame with 2837748 rows and 6 variables:
 \describe{
-\item{start_dt}{Start date}
-\item{survey_method_cd}{Methodology of survey}
-\item{survey_type_cd}{Survey type code}
-\item{source_dataset_id}{Id of source dataset}
-\item{transect_id}{Id of transecet}
-\item{segmented_transect_id}{source_transect_id from catalog}
-\item{transect_width_nb}{width of transect when availiable}
+\item{long}{longitude}
+\item{lat}{latitude}
+\item{dataset_id}{Id of source dataset}
+\item{order}{Index of order}
+\item{piece}{Piece Id}
+\item{transect_id}{Id of transect}
 }}
 \source{
 \url{https://github.com/USFWS/AMAPPS/tree/master/NWASC}
@@ -21,7 +20,7 @@
 nwasc.ph1.shp.pre
 }
 \description{
-A daset example of a cleaned up query of phase 1 track information
+A dataset example of a cleaned up query of phase 1 track information
 from the Northwest Atlantic Seabird Catalog
 }
 \keyword{datasets}

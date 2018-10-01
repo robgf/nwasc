@@ -4,7 +4,7 @@
 \name{nwasc.ph1.dts.dat}
 \alias{nwasc.ph1.dts.dat}
 \title{Legacy NWASC Phase 1 DTS Transect Data}
-\format{A data frame with 37818 rows and 17 varibles}
+\format{A data frame with 37818 rows and 17 variables}
 \source{
 \url{https://github.com/USFWS/AMAPPS/tree/master/NWASC}
 }

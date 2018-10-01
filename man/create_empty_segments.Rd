@@ -16,7 +16,9 @@ df of empty segments
 Create Empty Segments
 }
 \examples{
+\dontrun{
 seg.empty <- create_empty_segments(seg)
+}
 }
 \seealso{
 \code{\link{segment_tracks}}

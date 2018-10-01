@@ -15,7 +15,7 @@ nwasc_segmentDTS(observations, transects, v.spd = 10,
 \item{v.spd}{numeric approx. speed of vessel}
 
 \item{occurences}{boolean flag  Calculates species counts by default (FALSE);
-set occurences = TRUE for number of flock sightings}
+set occurrences = TRUE for number of flock sightings}
 }
 \value{
 df wide-form dataframe with processed data
@@ -28,7 +28,7 @@ Returns wide-form dataframe with processed data
 Requires observation table with lat/long for each sighting and transect table with single row for each transect id
 
 v.spd sets assumed vessel speed in knots when vessel speed is missing
-Calculates species counts by default; set occurences = TRUE for number of flock sightings
+Calculates species counts by default; set occurrences = TRUE for number of flock sightings
 
 Distances are in nautical miles
 
@@ -38,5 +38,7 @@ Modified 09-30-16
 read in dts and observation tables
 }
 \examples{
+\dontrun{
 seg.dat.phase1.dts = segmentDTS(nwasc.ph1.dts.obs.dat, nwasc.ph1.dts.dat)
+}
 }

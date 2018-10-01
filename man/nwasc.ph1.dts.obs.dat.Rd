@@ -4,7 +4,7 @@
 \name{nwasc.ph1.dts.obs.dat}
 \alias{nwasc.ph1.dts.obs.dat}
 \title{Legacy NWASC Phase 1 DTS Observation Data}
-\format{A data frame with 372817 rows and 8 varibles}
+\format{A data frame with 372817 rows and 8 variables}
 \source{
 \url{https://github.com/USFWS/AMAPPS/tree/master/NWASC}
 }
