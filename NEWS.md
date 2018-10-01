@@ -15,7 +15,7 @@
 # nwasc 0.3.0.9009
 
 # nwasc 0.3.0.9008
-* documented data sets
+* documented data setsuse_
 * minor typo corrections
 
 # nwasc 0.3.0.9007
