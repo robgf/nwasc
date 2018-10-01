@@ -1,19 +1,20 @@
 # nwasc 0.4.0.9000
+*  Update `Readme.rmd` and knitted
 
 # nwasc 0.4.0
 * Objects all documented
-* Todo: Vignette, readme
+* Todo: Vignette, Readme
 
 # nwasc 0.3.0.9009
 
 # nwasc 0.3.0.9008
-* documented datasets
+* documented data sets
 * minor typo corrections
 
 # nwasc 0.3.0.9007
 * rename export function to have preface nwasc_
 * documented package
-* determined all needed funcions imported
+* determined all needed functions imported
 
 # nwasc 0.3.0.9006
 * function documentation works
