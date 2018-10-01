@@ -1,3 +1,5 @@
+# nwasc 0.3.0.9005
+
 # nwasc 0.3.0.9004
 * Documented `finilize_output.R`
 
