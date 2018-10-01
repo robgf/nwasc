@@ -6,12 +6,17 @@
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
-The goal of nwasc is to …
+The goal of nwasc is to segment survey data from the [Northwest Atlantic
+Seabid Catalog
+(NWASC)](https://github.com/USFWS/AMAPPS/tree/master/NWASC).
+
+An example of package usage is contained in the package vignette and on
+the github.io webpage …
 
 ## Installation
 
 You can install the released version of nwasc from
-[CRAN](https://CRAN.R-project.org) with:
+[GitHub](https://github.com/robgf/nwasc) with:
 
 ``` r
 devtools::install_github("robgf/nwasc")

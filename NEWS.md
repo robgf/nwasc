@@ -1,4 +1,6 @@
 # nwasc 0.4.0
+* Objects all documented
+* Todo: Vignette, readme
 
 # nwasc 0.3.0.9009
 
