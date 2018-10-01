@@ -1,7 +1,7 @@
 Type: Package
 Package: nwasc
 Title: What the Package Does (Title Case)
-Version: 0.3.0.9008
+Version: 0.3.0.9009
 Authors@R: c(
     person("Robert", "Fowler", , "robert_fowler@fws.gov", role = c("aut", "cre")),
     person("Kyle", "Dettloff", role = "ctb"),
