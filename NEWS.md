@@ -1,3 +1,5 @@
+# nwasc 0.7.1
+
 # nwasc 0.7.0
 * ready to go 
 * want to tweak format of vignette
