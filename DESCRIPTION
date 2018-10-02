@@ -1,7 +1,7 @@
 Type: Package
 Package: nwasc
 Title: What the Package Does (Title Case)
-Version: 0.6.0
+Version: 0.7.0
 Authors@R: person("Robert", "Fowler", , "robert_fowler@fws.gov", role = c("aut", "cre"))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: The nwasc package was written by FWS for BOEM to segment transect 
@@ -41,4 +41,3 @@ Depends:
     dplyr,
     magrittr,
     R (>= 3.5)
-
