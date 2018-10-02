@@ -8,10 +8,10 @@ navbar:
     href: index.html
     icon: fa-kiwi-bird
   - text: Vignette
-    href: doc/segmentation_overview_example.html
+    href: docs/doc/segmentation_overview_example.html
     icon: fa-file-code
   - text: Presentation
-    href: decks/2018_10_03_Overview_Presentation.html
+    href: docs/decks/2018_10_03_Overview_Presentation.html
     icon: fa-desktop
   - text: Example Map
     href: Seabird_Map_preview.html
