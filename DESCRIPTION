@@ -32,9 +32,9 @@ Suggests:
     spelling (>= 1.2),
     testthat,
     roxygen2 (>= 6.1.0),
-    knitr,
     rmarkdown,
-    covr
+    covr,
+    knitr
 Encoding: UTF-8
 Language: en-US
 LazyData: true
@@ -45,3 +45,4 @@ Depends:
     magrittr,
     R (>= 3.5)
 VignetteBuilder: knitr
+

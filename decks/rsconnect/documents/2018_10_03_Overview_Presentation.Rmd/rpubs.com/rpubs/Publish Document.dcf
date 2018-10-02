@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/425192/0a49aa2bfb0c4bd186c70a0e57d38cd0
+bundleId: https://api.rpubs.com/api/v1/document/425192/0a49aa2bfb0c4bd186c70a0e57d38cd0
+url: http://rpubs.com/robgfowler/425192
+when: 1538501349.67766

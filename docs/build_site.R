@@ -1,4 +1,4 @@
-current_version <- "0.0.0" # Simpler navigation
+current_version <- "1.0.0" # Simpler navigation
 wd = getwd()
 
 #Set our working directory.

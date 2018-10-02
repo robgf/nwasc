@@ -1,5 +1,5 @@
 ---
-title: "Segmentation code Overview"
+title: "Segmentation Code Overview"
 subtitle: "nwasc r-package"
 author: "Rob Fowler, U.S. Fish and Wildlife Service"
 email: "robert_fowler@fws.gov"
