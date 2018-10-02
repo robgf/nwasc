@@ -1,6 +1,8 @@
 # nwasc 0.5.0.9001
 * add a load unit test
 * add coveralls
+* Begin slides
+* Presentatoin Complete
 
 # nwasc 0.5.0.9000
 * add Appvoyuer

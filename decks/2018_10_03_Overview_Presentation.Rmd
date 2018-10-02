@@ -1,0 +1,127 @@
+---
+title: "Segmentation code Overview"
+subtitle: "nwasc r-package"
+author: "Rob Fowler, U.S. Fish and Wildlife Service"
+email: "robert_fowler@fws.gov"
+date: "03 OCT 2018"
+output: slidy_presentation
+---
+
+
+## Guiding Principles
+
+- Simple
+- Reproducible results
+- Well documented
+
+## R-Package Solution
+
+* Organized code 
+* Documentation standards
+    + The Comprehensive R Archive Network (CRAN) https://cran.r-project.org
+    + RStudio  https://rstudio.com
+    + Tidyverse https://www.tidyverse.org
+* Testable style requirements
+* Facilitates unit testing
+* Works well with GitHub https://www.github.com
+
+## Package Location and Installing
+
+* https://github.com/robgf/nwasc
+* Install:
+
+```{r echo=TRUE, eval=FALSE}
+devtools::install_github("robgf/nwasc")
+```
+
+## Organized Code
+
+* Keeping it simple ~883 files in 326 folders 
+* Four (4) exported functions
+    + All with prefix "nwasc_"
+    + Two Segmentation Functions
+        - CTS data: nwasc_segmentCTS()
+        - DTS data: nwasc_segmentDTS()
+    + Two function for finalizing results into one file
+* Example of clean data (circa Spring 2017) included in package (35MB)
+
+## Documentation
+
+* R/Tidyverse has two documentation forms, short and long
+* Short form
+    + Technical internal documentation
+    + Allows for standard R help:
+```{r echo=TRUE, eval=FALSE}
+?nwasc
+?nwasc_SegmentCTS
+```
+* Long form vignette
+    + Full example of running code
+
+
+## Running code
+
+* Requirements for catalog query in documentation
+    + Webpage
+    + Vignette
+    + Function documentation
+
+* Due to the size of the NWASC this takes a while
+    
+```{r echo=TRUE, eval=FALSE}
+library(nwasc)
+seg.dat.phase2 = nwasc_segmentCTS(nwasc.ph2.obs.pre,
+                            nwasc.ph2.shp.pre,
+                            nwasc.ph2.cts.dat,
+
+seg.dat.phase1.cts = nwasc_segmentCTS(nwasc.ph1.obs.pre,
+                                nwasc.ph1.shp.pre,
+                                nwasc.ph1.cts.dat,
+
+seg.dat.phase1.dts = nwasc_segmentDTS(nwasc.ph1.dts.obs.dat,
+                                nwasc.ph1.dts.dat)
+
+segmented_seabird_catalogs <- nwasc_bind_phases(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)
+nwasc_write_segmented_csv(segmented_seabird_catalogs)
+zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_transects_3 .csv")
+
+```
+
+## Testing
+
+* Testing inputs
+    +Occurs with QA/QC of Catalog
+* Testing functions
+    + unit tests of functions
+    + presently at 89% coverage
+        - .onLoad can't be tested externally
+        - Legacy code has unused options
+        - Writing final output produces >200MB file and
+          shouldn't be tested on third party server
+
+
+
+## Passed Standards
+
+* External Continuous Integration Services
+    + Travis CI [![Travis build status](https://travis-ci.org/robgf/nwasc.svg?branch=master)](https://travis-ci.org/robgf/nwasc)
+    + AppVeyor [![Travis build status](https://travis-ci.org/robgf/nwasc.svg?branch=master)](https://travis-ci.org/robgf/nwasc)
+    
+* Test Coverage Reviews
+    + Codecov [![Codecov test coverage](https://codecov.io/gh/robgf/nwasc/branch/master/graph/badge.svg)](https://codecov.io/gh/robgf/nwasc?branch=master)
+    + Coveralls [![Coveralls test coverage](https://coveralls.io/repos/github/robgf/nwasc/badge.svg)](https://coveralls.io/r/robgf/nwasc?branch=master)
+
+## Viewing Results (ongoing work)
+
+* Leaflet Map of tracks with observations
+* Overlay of segments
+* Example: 
+    + Different discretization for subset of NWASC
+    + Winter seaducks FWS flights 'segments' common bins over years
+* Next Steps:
+    + Implement shiny version of maps for catalog
+    + Similar to ARCGIS/QGIS maps, but without software or knowledge 
+
+* Move copy of repository to FWS GitHub account
+    
+    
