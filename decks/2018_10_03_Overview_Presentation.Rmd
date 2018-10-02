@@ -90,7 +90,7 @@ zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_t
 ## Testing
 
 * Testing inputs
-    +Occurs with QA/QC of Catalog
+    + Occurs with QA/QC of Catalog
 * Testing functions
     + unit tests of functions
     + presently at 89% coverage
@@ -120,7 +120,7 @@ zip("segmented_results", file = "segmented_seabird_catalog-2018-09-27-combined_t
     + Winter seaducks FWS flights 'segments' common bins over years
 * Next Steps:
     + Implement shiny version of maps for catalog
-    + Similar to ARCGIS/QGIS maps, but without software or knowledge 
+    + Similar to ARCGIS/QGIS maps, but without software or knowledge prerequisite.
 
 * Move copy of repository to FWS GitHub account
     
