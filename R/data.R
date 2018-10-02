@@ -111,7 +111,6 @@
 #'
 #' @format A data frame with 526991 rows and 6 variables:
 #' \describe{
-#' \describe{
 #'   \item{long}{longitude}
 #'   \item{lat}{latitude}
 #'   \item{dataset_id}{Id of source dataset}

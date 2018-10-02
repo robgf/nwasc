@@ -4,7 +4,14 @@
 \name{nwasc.ph2.shp.pre}
 \alias{nwasc.ph2.shp.pre}
 \title{Example of NWASC Phase 1 CTS Track Data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 526991 rows and 6 columns.}
+\format{A data frame with 526991 rows and 6 variables:
+\describe{
+\item{long}{longitude}
+\item{lat}{latitude}
+\item{dataset_id}{Id of source dataset}
+\item{order}{Index of order}
+\item{transect_id}{Id of transect}
+}}
 \source{
 \url{https://github.com/USFWS/AMAPPS/tree/master/NWASC}
 }

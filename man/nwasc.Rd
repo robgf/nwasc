@@ -25,11 +25,5 @@ nwasc_write_segmented_csv: writes a date stamped .csv of the segmented data
 \author{
 \strong{Maintainer}: Robert Fowler \email{robert_fowler@fws.gov}
 
-Other contributors:
-\itemize{
-  \item Kyle Dettloff [contributor]
-  \item Kaycee Coleman [contributor]
-}
-
 }
 \keyword{internal}

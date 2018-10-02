@@ -10,9 +10,6 @@ navbar:
   - text: Vignette
     href: ../doc/segmentation_overview_example.html
     icon: fa-file-code
-  - text: Vignette-pdf
-    href: ../doc/segmentation_overview_example.pdf
-    icon: fa-file-pdf
   - text: Presentation
     href: ../decks/2018_10_03_Overview_Presentation.html
     icon: fa-desktop
