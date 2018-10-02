@@ -2,42 +2,48 @@ Type: Package
 Package: nwasc
 Title: What the Package Does (Title Case)
 Version: 0.7.0
-Authors@R: person("Robert", "Fowler", , "robert_fowler@fws.gov", role = c("aut", "cre"))
+Authors@R: 
+    person(given = "Robert",
+           family = "Fowler",
+           role = c("aut", "cre"),
+           email = "robert_fowler@fws.gov")
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: The nwasc package was written by FWS for BOEM to segment transect 
-    survey data from the Northwest Atlantic Seabird Catalog (maintained by FWS). 
-    Each transect is segmented into fixed length segments with the remainder 
-    placed according to a set rule. Observations are tallied by segment and 
-    transect.
+Description: The nwasc package was written by FWS for BOEM to
+    segment transect survey data from the Northwest Atlantic Seabird
+    Catalog (maintained by FWS).  Each transect is segmented into fixed
+    length segments with the remainder placed according to a set rule.
+    Observations are tallied by segment and transect.
 License: GPL-3
+Depends: 
+    dplyr,
+    magrittr,
+    R (>= 3.5)
 Imports: 
-    tibble,
+    broom,
+    geosphere,
+    lubridate,
+    maptools,
+    methods,
+    readr,
+    rgdal,
+    rgeos,
     rlang (>= 0.1.2),
     sp,
-    rgeos,
-    lubridate,
-    readr,
     stringi,
+    tibble,
     tidyr,
-    broom,
-    zoo,
-    maptools,
-    geosphere,
-    methods,
-    rgdal
+    zoo
 Suggests: 
-    spelling (>= 1.2),
-    testthat,
-    roxygen2 (>= 6.1.0),
-    rmarkdown,
     covr,
+    knitr,
+    rmarkdown,
+    roxygen2 (>= 6.1.0),
+    spelling (>= 1.2),
+    testthat
+VignetteBuilder: 
     knitr
 Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
-Depends: 
-    dplyr,
-    magrittr,
-    R (>= 3.5)

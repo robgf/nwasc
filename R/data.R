@@ -114,6 +114,7 @@
 #'   \item{long}{longitude}
 #'   \item{lat}{latitude}
 #'   \item{dataset_id}{Id of source dataset}
+#'   \item{piece}{Transect piece ID}
 #'   \item{order}{Index of order}
 #'   \item{transect_id}{Id of transect}
 #'   }
