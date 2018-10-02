@@ -1,6 +1,6 @@
 # nwasc 0.7.0
 * ready to go 
-* want to tweak format of vignetter
+* want to tweak format of vignette
 # nwasc 0.6.0
 * Presentation complete
 * Todo: Webpage, vignette
