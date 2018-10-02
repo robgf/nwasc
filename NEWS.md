@@ -1,3 +1,5 @@
+# nwasc 0.8.0
+
 # nwasc 0.7.1
 patching travis-co errors
 
