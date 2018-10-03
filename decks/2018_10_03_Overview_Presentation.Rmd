@@ -43,7 +43,7 @@ devtools::install_github("robgf/nwasc")
         - CTS data: nwasc_segmentCTS()
         - DTS data: nwasc_segmentDTS()
     + Two function for finalizing results into one file
-* Example of clean data (circa Spring 2017) included in package (35MB)
+* Example of clean data (circa Summer 2017) included in package (35MB)
 
 ## Documentation
 

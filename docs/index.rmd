@@ -31,17 +31,21 @@ Please consider creating a fork to this repository.  Requests for fixes or enhan
 Plans are to relocate this repository within the U.S. FWS GitHub This site and accompanying documentation will be updated at that time.  
 
 # Guiding Principles
-The goal of this package is to have a 
-* Simple
-* Well documented
+The goal of this package is to have a
+
+- Simple
+- Well documented
+
 code with:
-* Reproducible results
+
+- Reproducible results
+
 for segmenting the transect and observation data contained in the [NWASC](https://github.com/USFWS/AMAPPS/tree/master/NWASC)]. Request or submissions of data from the NWASC should be made following the directions on the NWASC website.
 
 
 # Organization
 There are four (4) exported functions. All with prefix "nwasc_" to avoid any conflicts with other packages already installed by the user. The two segmentation functions nwasc_segmentCTS() and nwasc_segmentDTS() are wrapper functions for the family of segmentation internal functions which can be found in the `R/` directory of the repo.
-The other exported functions aid in the finalization of the segmented data. In practice there are three segmented data frames, 1) Continuous Time Survey (CTS) data segmented from phase 2 of the NWASC, 2) CTS data segmented from phase 1 of the NWASC and #) Discrete Time Survey (DTS) data segmented from phase 1 of the NWASC. We do not expect to receive any further DTS as modern surveys use GPS systems during collection active. 
+The other exported functions aid in the finalization of the segmented data. In practice there are three segmented data frames, 1) Continuous Time Survey (CTS) data segmented from phase 2 of the NWASC, 2) CTS data segmented from phase 1 of the NWASC and 3) Discrete Time Survey (DTS) data segmented from phase 1 of the NWASC. We do not expect to receive any further DTS as modern surveys use GPS systems during collection active. 
 
 The nwasc_segmentCTS() requires queries from three of the NWASC tables.
 From the `obsevations` table the following columns need to be pulled:
