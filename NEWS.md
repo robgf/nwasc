@@ -1,3 +1,5 @@
+# nwasc 1.0.0
+
 # nwasc 0.8.0
 * last prelease check
 * should be clean now
