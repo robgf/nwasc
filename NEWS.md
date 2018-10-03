@@ -1,5 +1,6 @@
 # nwasc 0.8.0
 * last prelease check
+* should be clean now
 
 # nwasc 0.7.1
 patching travis-co errors
