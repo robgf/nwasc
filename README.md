@@ -4,7 +4,7 @@
 # nwasc <img src="man/figures/logo.png" align="right" height=140/>
 
 [![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis build
 status](https://travis-ci.org/robgf/nwasc.svg?branch=master)](https://travis-ci.org/robgf/nwasc)
 [![AppVeyor build
