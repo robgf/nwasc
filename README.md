@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nwasc <img src="man/figures/logo.png" align="right" height=140/>
+# nwasc segmentation package <img src="man/figures/logo.png" align="right" height=140/>
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
