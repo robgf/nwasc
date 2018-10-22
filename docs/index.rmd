@@ -102,11 +102,11 @@ Example run:
 library(nwasc)
 seg.dat.phase2 = nwasc_segmentCTS(nwasc.ph2.obs.pre,
                             nwasc.ph2.shp.pre,
-                            nwasc.ph2.cts.dat,
+                            nwasc.ph2.cts.dat)
 
 seg.dat.phase1.cts = nwasc_segmentCTS(nwasc.ph1.obs.pre,
                                 nwasc.ph1.shp.pre,
-                                nwasc.ph1.cts.dat,
+                                nwasc.ph1.cts.dat)
 
 seg.dat.phase1.dts = nwasc_segmentDTS(nwasc.ph1.dts.obs.dat,
                                 nwasc.ph1.dts.dat)

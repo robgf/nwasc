@@ -12,7 +12,7 @@
 
 <meta name="author" content="Rob Fowler" />
 
-<meta name="date" content="2018-10-02" />
+<meta name="date" content="2018-10-22" />
 
 <title>Segmentation Overview</title>
 
@@ -89,7 +89,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<link rel="stylesheet" href="H:\RPackages\rmarkdown\rmarkdown\templates\html_vignette\resources\vignette.css" type="text/css" />
+<link rel="stylesheet" href="E:\RPackages\rmarkdown\rmarkdown\templates\html_vignette\resources\vignette.css" type="text/css" />
 
 </head>
 
@@ -100,7 +100,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h1 class="title toc-ignore">Segmentation Overview</h1>
 <h4 class="author"><em>Rob Fowler</em></h4>
-<h4 class="date"><em>2018-10-02</em></h4>
+<h4 class="date"><em>2018-10-22</em></h4>
 
 
 
@@ -174,13 +174,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(nwasc)</a>
 <a class="sourceLine" id="cb6-3" data-line-number="3">seg.dat.phase2 =<span class="st"> </span><span class="kw">nwasc_segmentCTS</span>(nwasc.ph2.obs.pre,</a>
 <a class="sourceLine" id="cb6-4" data-line-number="4">                            nwasc.ph2.shp.pre,</a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">                            nwasc.ph2.cts.dat,</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">                            nwasc.ph2.cts.dat)</a>
 <a class="sourceLine" id="cb6-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="dt">seg.dat.phase1.cts =</span> <span class="kw">nwasc_segmentCTS</span>(nwasc.ph1.obs.pre,</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7">seg.dat.phase1.cts =<span class="st"> </span><span class="kw">nwasc_segmentCTS</span>(nwasc.ph1.obs.pre,</a>
 <a class="sourceLine" id="cb6-8" data-line-number="8">                                nwasc.ph1.shp.pre,</a>
-<a class="sourceLine" id="cb6-9" data-line-number="9">                                nwasc.ph1.cts.dat,</a>
+<a class="sourceLine" id="cb6-9" data-line-number="9">                                nwasc.ph1.cts.dat)</a>
 <a class="sourceLine" id="cb6-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb6-11" data-line-number="11"><span class="dt">seg.dat.phase1.dts =</span> <span class="kw">nwasc_segmentDTS</span>(nwasc.ph1.dts.obs.dat,</a>
+<a class="sourceLine" id="cb6-11" data-line-number="11">seg.dat.phase1.dts =<span class="st"> </span><span class="kw">nwasc_segmentDTS</span>(nwasc.ph1.dts.obs.dat,</a>
 <a class="sourceLine" id="cb6-12" data-line-number="12">                                nwasc.ph1.dts.dat)</a>
 <a class="sourceLine" id="cb6-13" data-line-number="13"></a>
 <a class="sourceLine" id="cb6-14" data-line-number="14">segmented_seabird_catalogs &lt;-<span class="st"> </span><span class="kw">nwasc_bind_phases</span>(seg.dat.phase2, seg.dat.phase1.cts, seg.dat.phase1.dts)</a>
