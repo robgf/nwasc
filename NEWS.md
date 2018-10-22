@@ -1,4 +1,9 @@
-# nwasc 1.0.0
+# nwasc 1.0.1.9000
+* Small Corrections 
+* Added note about pieces column to data-raw/
+
+# nwasc 1.0.0 (RELEASE)
+Verision shwon to BOEM
 
 # nwasc 0.8.0
 * last prelease check
