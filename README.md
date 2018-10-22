@@ -30,6 +30,10 @@ You can install the released version of nwasc from
 devtools::install_github("robgf/nwasc")
 ```
 
+For questions or to and issue please consider using the issue feature in
+github. For help using this feature or general questions please email
+Rob Fowler, <robert_fowler@fws.gov>
+
 Please note that the ‘nwasc’ project is released with a [Contributor
 Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this
 project, you agree to abide by its terms.
