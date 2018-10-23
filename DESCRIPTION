@@ -16,7 +16,8 @@ Description: The nwasc package was written by FWS for BOEM to
 License: GPL-3
 Depends: 
     dplyr,
-    magrittr
+    magrittr,
+    R (>= 3.5.0)
 Imports: 
     broom,
     geosphere,
