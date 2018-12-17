@@ -453,10 +453,10 @@ place_midpoints <- function(seg.all.new, midpoints, transects) {
       select(
         transects,
         transect_id,
-        start_dt,
-        transect_width_nb,
-        survey_type_cd,
-        survey_method_cd
+        start_dt ,
+        transect_width_nb #,
+        #survey_type_cd,
+        #survey_method_cd
       ),
       by = "transect_id"
     )
