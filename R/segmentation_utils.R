@@ -502,7 +502,7 @@ place_observations <- function(observations, seg.mids, lineframe, maxDist, projH
 #' segmented <- create_segmented_df(seg.mids, seg.obs, transects)
 #' }
 create_segmented_df <- function(seg.mids, seg.obs, transects) {
-  segmented <- full_join(seg.mids, seg.obs, by = c("transect_id", "seg_num")) %>%
+  segmented <- full_join(seg.mids, seg.obs) %>%
     mutate(spp_cd = replace(spp_cd, is.na(spp_cd), "NOT_AN_OSERVATION")) %>%
     group_by(
       dataset_id,
