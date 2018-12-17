@@ -525,12 +525,12 @@ create_segmented_df <- function(seg.mids, seg.obs, transects) {
   segmented <- transects %>%
     select(transect_id, source_dataset_id, segmented_transect_id) %>%
     distinct() %>%
-    left_join(segmented, ., by = "transect_id") %>%
+    left_join(segmented, .) %>%
     select(
       source_dataset_id,
       segmented_transect_id,
-      everything(),
-      -dataset_id
+      everything()#,
+      #-dataset_id
     ) %>%
     arrange(transect_id, seg_num)
 }
