@@ -513,8 +513,8 @@ create_segmented_df <- function(seg.mids, seg.obs, transects) {
       transect_width_nb,
       mid_long,
       mid_lat,
-      survey_type_cd,
-      survey_method_cd,
+      #survey_type_cd,
+      #survey_method_cd,
       spp_cd
     ) %>%
     summarise(count = sum(count)) %>%
