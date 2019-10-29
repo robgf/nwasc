@@ -14,6 +14,8 @@ coverage](https://codecov.io/gh/robgf/nwasc/branch/master/graph/badge.svg)](http
 [![Coveralls test
 coverage](https://coveralls.io/repos/github/robgf/nwasc/badge.svg)](https://coveralls.io/r/robgf/nwasc?branch=master)
 
+This was a project for BOEM produced while in FWS employment and will be remove in the coming days.
+
 The goal of nwasc is to segment survey data from the [Northwest Atlantic
 Seabid Catalog
 (NWASC)](https://github.com/USFWS/AMAPPS/tree/master/NWASC).
