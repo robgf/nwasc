@@ -14,6 +14,8 @@ coverage](https://codecov.io/gh/robgf/nwasc/branch/master/graph/badge.svg)](http
 [![Coveralls test
 coverage](https://coveralls.io/repos/github/robgf/nwasc/badge.svg)](https://coveralls.io/r/robgf/nwasc?branch=master)
 
+This package is no longer under active development.  If you wish to continue development please make a fork. 
+
 The goal of nwasc is to segment survey data from the [Northwest Atlantic
 Seabid Catalog
 (NWASC)](https://github.com/USFWS/AMAPPS/tree/master/NWASC).
@@ -31,8 +33,7 @@ devtools::install_github("robgf/nwasc")
 ```
 
 For questions or to and issue please consider using the issue feature in
-github. For help using this feature or general questions please email
-Rob Fowler, <robert_fowler@fws.gov>
+github. 
 
 Please note that the ‘nwasc’ project is released with a [Contributor
 Code of Conduct](.github/CODE_OF_CONDUCT.md). By contributing to this
